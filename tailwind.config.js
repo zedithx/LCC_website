@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         'ron': ['RON', 'sans-serif'],
         'gotham': ['Gotham', "sans-serif"],
+        'gotham-light': ['Gotham-Light', "sans-serif"]
         },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

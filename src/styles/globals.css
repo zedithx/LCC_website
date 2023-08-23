@@ -10,3 +10,8 @@
   font-family: 'Gotham';
   src: url('../fonts/Gotham.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../fonts/Gotham-Light.ttf') format('truetype');
+}
