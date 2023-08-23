@@ -87,7 +87,7 @@ export default function Countdown() {
                           <div className='relative' data-aos='flip-up' data-aos-duration='700' data-aos-delay='900'>
                               <div className='rounded-full w-36 h-36 bg-black opacity-10 mx-auto'></div>
                               <Link href='/home'><button className='absolute -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2 w-28
-                               h-28 bg-[#E63B3B] rounded-full font-gotham hover:bg-[#F64747]'>
+                               h-28 bg-[#E63B3B] rounded-full font-gotham hover:bg-[#5FFF6F]'>
                             Press Me
                             </button>
                               </Link>

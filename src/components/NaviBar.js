@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import { Link } from "react-scroll"
+import Link from "next/link"
 import Image from "next/image";
 import sutd_logo from "../../public/images/logo/sutd_logo.png";
 import background_icons from "../../public/images/background/Frame 2.png";
@@ -12,7 +12,7 @@ export default function NaviBar() {
             <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
         </div>
         <button
-            className="absolute right-2 top-8 text-white cursor-pointer py-3 px-3 z-20"
+            className="absolute right-2 top-8 text-white cursor-pointer py-3 px-3 z-30"
             onClick={() => setNavState(!navState)}
           >
             {navState ? (
@@ -50,7 +50,7 @@ export default function NaviBar() {
         {navState && (
             <div className="w-full w-0 h-0 overflow-hidden">
                 <br></br>
-                <ul className="absolute z-10 top-8 right-0 pl-4 pt-14 pb-2 bg-gradient-to-r from-[#313866] to-sky-800 rounded-2xl text-right" data-aos='fade-left' data-aos-duration='700'>
+                <ul className="absolute z-20 top-8 right-0 pl-4 pt-14 pb-2 bg-gradient-to-r from-[#313866] to-sky-800 rounded-2xl text-right" data-aos='fade-left' data-aos-duration='700'>
                     {[
                     ['Home', '/home'],
                     ['Navigation', '/navigation'],
