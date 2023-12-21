@@ -21,7 +21,7 @@ import {useEffect} from "react";
 
 
 
-const LCC_DATE = new Date("2023-09-27")
+const LCC_DATE = new Date("2024-01-27")
 
 export default function Countdown() {
     useEffect(() => {
