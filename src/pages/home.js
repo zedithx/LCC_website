@@ -10,12 +10,15 @@ import home_background1 from '../../public/images/background/home_background1.pn
 import cuteasyraf from '../../public/images/LCCImages/cuteasyraf.png'
 import bloom2 from '../../public/images/background/bloom2.png'
 import bloom3 from '../../public/images/background/bloom3.png'
-import white_divider from '../../public/images/background/white_divider.png'
+import bloom4 from '../../public/images/background/bloom4.png'
+import pink_divider from '../../public/images/background/pink_divider.png'
 import social from '../../public/images/logo/social.png'
 import entertainment from '../../public/images/logo/entertainment.png'
 import red_dots from '../../public/images/background/red_dots.png'
 import red_dot from '../../public/images/background/red_dot.png'
+import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 
+const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 export default function Home() {
     useEffect(() => {
             AOS.init();
@@ -29,7 +32,7 @@ export default function Home() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-      <div className='bg-[#1C1C1C] bg-cover -z-20 h-auto w-screen'>
+      <div className='bg-[#1C1C1C] bg-cover -z-20 h-auto w-full'>
           <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
               <Image layout='responsive' src={home_background1}/>
           </div>
@@ -37,27 +40,26 @@ export default function Home() {
           <section id='top bar' className='relative'>
             <NaviBar/>
           </section>
+          {/*Countdown Alert For Luckydraw*/}
+          <section id='luckydraw-countdown' className= 'pl-20 pt-32'>
+              <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
+          </section>
           {/* Top Header */}
-          <section id='top-header' className='pt-32 font-ron pl-20 flex flex-row text-left'>
+          <section id='top-header' className='font-ron pl-20 flex flex-row text-left'>
               <div className='pt-10'>
-            <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>27 Sept 2-6pm</h1>
-            <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='700'>
-                LEARNING
-            </h1>
-            <br></br>
-            <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='900'>
-                CELEBRATION
-            </h1>
-            <br></br>
-            <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='1100'>
-                CARNIVAL
-            </h1>
-            <h1 className='text-[#FD8FFF] text-[3.5vw]' data-aos='fade-right' data-aos-delay='1300'>@ Campus Centre</h1>
-              <div className='text-white font-gotham-light text-[1.5vw]'>
-                  <h1 data-aos='fade-right' data-aos-delay='1500'>Overseas Experience.</h1>
-                  <h1 data-aos='fade-right' data-aos-delay='1500'>Research Opportunities.</h1>
-                  <h1 data-aos='fade-right' data-aos-delay='1500'>Fifth Rows.</h1>
-              </div>
+                <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>27 Sept 2-6pm</h1>
+                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='700'>
+                    LEARNING
+                </h1>
+                <br></br>
+                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='900'>
+                    CELEBRATION
+                </h1>
+                <br></br>
+                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='1100'>
+                    CARNIVAL
+                </h1>
+                <h1 className='text-[#B57BFF] text-[3vw] pt-4' data-aos='fade-right' data-aos-delay='1300'>@ Campus Centre & <br></br>Auditorium</h1>
          </div>
           <div className='pl-20 w-[45vw] z-10' data-aos='fade-left' data-aos-delay='1700'>
               <Image layout='responsive' src={cuteasyraf}/>
@@ -65,25 +67,22 @@ export default function Home() {
           </section>
           {/* Event explanation */}
           <section id='event-explanation'>
-              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/4 top-1/2 w-screen'>
+              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/4 top-1/2 w-3/4'>
                  <Image layout='responsive' src={bloom2}/>
               </div>
               <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
                 <Image layout='responsive' src={home_background1}/>
              </div>
-              <h1 className='pl-20 pt-40 font-ron text-[2vw] text-[#25F3FF]'>What is this event about?</h1>
+              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>What is this event</h1>
               <div className='w-11/12 inline-block pl-14 mt-4'>
-                  <Image layout='responsive' src={white_divider}/>
-              </div>
-              <div className='w-full text-[1.5vw] inline-block px-28 mt-4'>
-                <h1 className='font-gotham-light text-white'>This event showcases and shares the different things that students have embarked on in the past summer with the rest of the school such as experiential learning journeys around the world and their innovations from the various programmes held over the past year. What we offer this year:</h1>
+                  <Image layout='responsive' src={pink_divider}/>
               </div>
               <div className='flex flex-row pt-10 justify-center gap-20'>
                   <div className='bg-[#596461] w-5/12 rounded-2xl pb-4 text-center z-10'>
                       <div className='w-[8vw] inline-block'>
                         <Image layout='responsive' src={social}/>
                       </div>
-                      <div className='bg-[#0A3F02] w-10/12 mx-auto border-2 pb-10 border-[#D3D3D3] relative text-[#5FFF6F] font-gotham-light'>
+                      <div className='bg-[#191970] w-10/12 mx-auto border-4 pb-10 border-gray-600 relative text-[#0BFFE6] font-gotham-light'>
                            <h1 className='text-[.5vw] absolute top-1 left-3'>
                                Log: #30194
                            </h1>
@@ -119,7 +118,7 @@ export default function Home() {
                       <div className='w-[4vw] inline-block pt-6'>
                         <Image layout='responsive' src={entertainment}/>
                       </div>
-                       <div className='bg-[#0A3F02] w-10/12 mx-auto border-2 text-[#5FFF6F] border-[#D3D3D3] font-gotham-light mt-6 pb-10 relative'>
+                       <div className='bg-[#191970] w-10/12 mx-auto border-4 text-[#0BFFE6] border-gray-600 font-gotham-light mt-6 pb-10 relative'>
                            <h1 className='text-[.5vw] absolute top-1 left-3'>
                                Log: #30195
                            </h1>
@@ -133,7 +132,7 @@ export default function Home() {
                            <div className='pl-8 w-10/12 pt-4 text-[1.2vw] text-left'>
                             <h1 className='font-bold'>Lucky Draw</h1>
                               <h1 className='text-white'>
-                                  Stand a chance to win Airpods Pro, Something and Something!! Click the link below for more info
+                                  Stand a chance to win AirPods Pro 2nd Gen, PRISM 28-inch monitor W280, Bose SoundLink Mini II, Phillips Airfryer, WeWatch V50 Projector
                               </h1>
                               <br></br>
                               <h1 className='font-bold'>Food Stamps</h1>
@@ -162,10 +161,13 @@ export default function Home() {
           </div>
           {/*Features*/}
           <section id='features'>
-            <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-screen'>
+            <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
                  <Image layout='responsive' src={bloom3}/>
               </div>
-            <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#25F3FF]'>Featuring</h1>
+              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
+                 <Image layout='responsive' src={bloom4}/>
+              </div>
+            <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#B57BFF]'>Featuring</h1>
           {/*    Insert Carousel here */}
               <div className='bg-[#596461] rounded-2xl mt-12 w-11/12 mx-auto pt-4 relative pb-[40vw] z-10'>
                   <div className='font-gotham text-black text-[1vw] inline-block pt-4 pl-8'>

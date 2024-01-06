@@ -36,11 +36,11 @@ export default function Countdown() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-      <div className='bg-[#1C1C1C] bg-cover h-auto text-center'>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen'>
+      <div className='bg-[#1C1C1C] bg-cover w-full h-auto text-center'>
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full'>
             <Image layout='responsive' src={bloom}/>
           </div>
-          <div className='absolute w-screen'>
+          <div className='absolute w-full'>
             <Image layout='responsive' src={background_icons}/>
           </div>
           <section id='sutd logo'>
@@ -61,7 +61,7 @@ export default function Countdown() {
                 <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-delay='1100'>
                     CARNIVAL
                 </h1>
-                <h1 className='text-[#FD8FFF] text-[4vw]' data-aos='fade-down' data-aos-delay='1300'>@ Campus Centre</h1>
+                <h1 className='text-[#B57BFF] text-[4vw]' data-aos='fade-down' data-aos-delay='1300'>@ Campus Centre<br></br> & Auditorium</h1>
             </section>
           <section id='counter'>
               <CountdownTimer targetDate={LCC_DATE} suppressHydrationWarning={true}/>
@@ -71,11 +71,11 @@ export default function Countdown() {
                   <Image layout='responsive' src={top_remote_dots}/>
               </div>
               <div className='flex flex-row'>
-                <div className='flex flex-wrap w-5/6 pt-4'>
+                <div className='flex flex-wrap w-5/6 pt-4' data-aos-offset="50px">
                     <div className='pl-24 lg:w-[20vw] w-[28vw] md:w-[24vw] inline-block' data-aos='flip-up' data-aos-duration='700' data-aos-delay='500'>
                         <Image layout='responsive' src={top_left}/>
                     </div>
-                      <div className='pl-6 relative font-ron text-[#5FFF6F] lg:leading-5 md:leading-4 sm:text-[0.8vw] md:text-[0.9vw] lg:text-[1vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='700'>
+                      <div className='pl-6 relative font-ron text-[#74F8FF] lg:leading-5 md:leading-4 sm:text-[0.8vw] md:text-[0.9vw] lg:text-[1vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='700'>
                           <div className='w-[34vw]'>
                             <Image layout='responsive' src={top_left2}/>
                           </div>

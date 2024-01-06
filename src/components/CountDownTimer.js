@@ -1,8 +1,5 @@
 import React from 'react';
 import {useCountdown} from "@/hooks/useCountdown";
-import Image from 'next/image'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export const CountdownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
@@ -38,16 +35,16 @@ export const CountdownTimer = ({ targetDate }) => {
         <table className='pt-20 inline-block text-[#FFEEFB]'>
             <tbody>
             <tr className='text-[9vw] md:text-[5vw] md:space-x-20 space-x-10 font-ron leading-9'>
-                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1300'>
+                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1300' data-aos-offset="50px">
                     {days_string[0]}{days_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Days</h1>
                 </td>
-                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1500'>
+                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1500' data-aos-offset="50px">
                     {hours_string[0]}{hours_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Hours</h1>
                 </td>
-                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1700'>
+                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1700' data-aos-offset="50px">
                     {minutes_string[0]}{minutes_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Minutes</h1>
                 </td>
-                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1900'>
+                <td className='inline-block' data-aos='zoom-in' data-aos-delay='1900' data-aos-offset="50px">
                     {seconds_string[0]}{seconds_string[1]} <br></br><h1 className='font-gotham text-[1.2vw]'>Seconds</h1>
                 </td>
             </tr>
