@@ -17,6 +17,7 @@ import right from "../../public/images/remote/right.png"
 import bottom_left2 from "../../public/images/remote/bottom_left2.png"
 import gps from "../../public/images/remote/gps.png"
 import bloom from "../../public/images/background/bloom.png"
+import bloompurp from "../../public/images/background/bloompurp.png"
 import {useEffect} from "react";
 
 
@@ -37,16 +38,21 @@ export default function Countdown() {
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
       <div className='bg-[#1C1C1C] bg-cover w-full h-auto text-center'>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full'>
-            <Image layout='responsive' src={bloom}/>
-          </div>
-          <div className='absolute w-full'>
-            <Image layout='responsive' src={background_icons}/>
-          </div>
           <section id='sutd logo'>
                 <div className='absolute left-8 top-8 md:w-[10vw] w-[24vw]'>
                     <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
                 </div>
+          </section>
+          <section id='background' className='w-full overflow-hidden'>
+              <div className='absolute float-left w-7/12'>
+                <Image layout='responsive' src={bloom}/>
+              </div>
+              <div className='absolute float-right w-full'>
+                <Image layout='responsive' src={bloompurp}/>
+              </div>
+              <div className='absolute w-full'>
+                <Image layout='responsive' src={background_icons}/>
+              </div>
           </section>
             <section id='header' className='pt-32 font-ron mx-auto inline-block text-left'>
                 <h1 className='text-[#25F3FF] text-[4vw]' data-aos='fade-down' data-aos-delay='500'>27 Sept 2-6pm</h1>
@@ -66,7 +72,7 @@ export default function Countdown() {
           <section id='counter'>
               <CountdownTimer targetDate={LCC_DATE} suppressHydrationWarning={true}/>
           </section>
-          <section className='bg-[#596461] bg-auto h-auto mt-20 pt-4' id='remote'>
+          <section className='bg-[#596461] relative bg-auto h-auto mt-20 pt-4' id='remote'>
               <div className='absolute w-[96vw] left-6'>
                   <Image layout='responsive' src={top_remote_dots}/>
               </div>

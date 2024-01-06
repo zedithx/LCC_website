@@ -17,6 +17,7 @@ import entertainment from '../../public/images/logo/entertainment.png'
 import red_dots from '../../public/images/background/red_dots.png'
 import red_dot from '../../public/images/background/red_dot.png'
 import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
+import Carousel from "@/components/Carousel";
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 export default function Home() {
@@ -170,37 +171,38 @@ export default function Home() {
             <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#B57BFF]'>Featuring</h1>
           {/*    Insert Carousel here */}
               <div className='bg-[#596461] rounded-2xl mt-12 w-11/12 mx-auto pt-4 relative pb-[40vw] z-10'>
-                  <div className='font-gotham text-black text-[1vw] inline-block pt-4 pl-8'>
-                      <div className='relative'>
-                        <Link href='/luckydraw' className='border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md bg-[#E63B3B] py-3 px-12'>
-                            UROP
-                        </Link>
-                      </div>
-                  </div>
-                  <div className='font-gotham text-black text-[1vw] inline-block pl-12'>
-                      <div className='relative'>
-                        <Link href='/luckydraw' className='border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md bg-[#E63B3B] py-3 px-12'>
-                            Overseas
-                        </Link>
-                      </div>
-                  </div>
-                  <div className='font-gotham text-black text-[1vw] inline-block pl-12'>
-                      <div className='relative'>
-                        <Link href='/luckydraw' className='border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md bg-[#E63B3B] py-3 px-12'>
-                            Fifth Row
-                        </Link>
-                      </div>
-                  </div>
                   <div className='absolute right-14 top-10'>
                     <Image src={red_dot}/>
                   </div>
+              {/*    Insert Carousel   */}
+                <Carousel/>
               </div>
           </section>
           <section id='poster'>
           {/*    Insert poster here*/}
           </section>
           <section id='timeline'>
-          {/*    Insert timeline*/}
+          <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>Where and When?</h1>
+              <div className='w-11/12 inline-block pl-14 mt-4'>
+                  <Image layout='responsive' src={pink_divider}/>
+              </div>
+          </section>
+          <section id='map'>
+          {/*    Insert Map here   */}
+          </section>
+          <section id='navigation-button' className='pb-20'>
+            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10'>
+                <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[1vw] text-[#0BFFE6] font-gotham inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
+                    <h1 className='my-4 ml-6'>
+                    For better navigation experience, please proceed to navigation page
+                    </h1>
+                </div>
+                <div className='inline-block w-1/6'>
+                  <Link href='/navigation' className='md:text-[1.2vw] text-[1vw] font-gotham border-8 border-[#757575] hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 inline-block'>
+                      Navigation
+                    </Link>
+                </div>
+            </div>
           </section>
       </div>
       </>
