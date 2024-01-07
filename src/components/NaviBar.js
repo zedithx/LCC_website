@@ -2,13 +2,12 @@ import React, { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image";
 import sutd_logo from "../../public/images/logo/sutd_logo.png";
-import background_icons from "../../public/images/background/Frame 2.png";
 
 export default function NaviBar() {
     const [navState, setNavState] = useState(false)
     return (
     <>
-        <div className='absolute left-8 top-8 md:w-[10vw] w-[24vw]'>
+        <div className='absolute z-20 left-8 top-8 md:w-[10vw] w-[24vw]'>
             <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
         </div>
         <button

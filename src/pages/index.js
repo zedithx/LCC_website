@@ -39,7 +39,7 @@ export default function Countdown() {
         </Head>
       <div className='bg-[#1C1C1C] bg-cover w-full h-auto text-center'>
           <section id='sutd logo'>
-                <div className='absolute left-8 top-8 md:w-[10vw] w-[24vw]'>
+                <div className='absolute z-10 left-8 top-8 md:w-[10vw] w-[24vw]'>
                     <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
                 </div>
           </section>
