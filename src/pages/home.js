@@ -11,6 +11,7 @@ import cuteasyraf from '../../public/images/LCCImages/cuteasyraf.png'
 import bloom2 from '../../public/images/background/bloom2.png'
 import bloom3 from '../../public/images/background/bloom3.png'
 import bloom4 from '../../public/images/background/bloom4.png'
+import bloom6 from '../../public/images/background/bloom6.png'
 import pink_divider from '../../public/images/background/pink_divider.png'
 import social from '../../public/images/logo/social.png'
 import entertainment from '../../public/images/logo/entertainment.png'
@@ -75,12 +76,12 @@ export default function Home() {
               <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
                 <Image layout='responsive' src={home_background1}/>
              </div>
-              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>What is this event</h1>
+              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
               <div className='w-11/12 inline-block pl-14 mt-4'>
                   <Image layout='responsive' src={pink_divider}/>
               </div>
               <div className='flex flex-row pt-10 justify-center gap-20'>
-                  <div className='bg-[#596461] w-5/12 rounded-2xl pb-4 text-center z-10'>
+                  <div className='bg-[#596461] w-5/12 rounded-2xl pb-4 text-center z-10' data-aos='fade-right' data-aos-delay='300' data-aos-duration='800'>
                       <div className='w-[8vw] inline-block'>
                         <Image layout='responsive' src={social}/>
                       </div>
@@ -116,7 +117,8 @@ export default function Home() {
                         <Image src={red_dots}/>
                       </div>
                   </div>
-                  <div className='bg-[#596461] w-5/12 rounded-2xl text-center z-10'>
+                  <div className='bg-[#596461] w-5/12 rounded-2xl text-center z-10' data-aos='fade-left' data-aos-delay='500' data-aos-duration='800'>
+                      {/*TO do carousel*/}
                       <div className='w-[4vw] inline-block pt-6'>
                         <Image layout='responsive' src={entertainment}/>
                       </div>
@@ -169,30 +171,28 @@ export default function Home() {
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
                  <Image layout='responsive' src={bloom4}/>
               </div>
-            <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#B57BFF]'>Featuring</h1>
-          {/*    Insert Carousel here */}
-              <div className='bg-[#596461] rounded-2xl mt-12 w-11/12 mx-auto pt-4 relative pb-[40vw] z-10'>
+            <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Featuring</h1>
+              <div className='bg-[#596461] rounded-2xl mt-12 w-11/12 mx-auto pt-4 relative pb-10 z-10'>
                   <div className='absolute right-14 top-10'>
                     <Image src={red_dot}/>
                   </div>
-              {/*    Insert Carousel   */}
                 <Carousel/>
               </div>
           </section>
-          <section id='timeline'>
-              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>Where and When?</h1>
+          <section id='timeline' className='relative'>
+              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Where and When?</h1>
               <div className='w-11/12 inline-block pl-14 mt-4'>
                   <Image layout='responsive' src={pink_divider}/>
               </div>
-              <div className='w-1/2 mt-4 mx-auto'>
+              <div className='w-1/2 mt-4 mx-auto z-20 relative' data-aos='flip-up' data-aos-delay='300' data-aos-duration='1200'>
                   <Image layout='responsive' src={timeline}/>
               </div>
-          </section>
-          <section id='map'>
-          {/*    Insert Map here   */}
+              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-full'>
+                <Image src={bloom6} layout='responsive'/>
+              </div>
           </section>
           <section id='navigation-button' className='pb-20 mt-20'>
-            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10'>
+            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>
                 <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[1vw] text-[#0BFFE6] font-gotham inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
                     <h1 className='my-4 ml-6'>
                     For better navigation experience, please proceed to navigation page

@@ -55,19 +55,19 @@ export default function Countdown() {
               </div>
           </section>
             <section id='header' className='pt-32 font-ron mx-auto inline-block text-left'>
-                <h1 className='text-[#25F3FF] text-[4vw]' data-aos='fade-down' data-aos-delay='500'>27 Sept 2-6pm</h1>
-                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-delay='700'>
+                <h1 className='text-[#25F3FF] text-[4vw]' data-aos='fade-down' data-aos-duration='800' data-aos-delay='500'>27 Sept 2-6pm</h1>
+                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-duration='800' data-aos-delay='700'>
                     LEARNING
                 </h1>
                 <br></br>
-                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-delay='900'>
+                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-duration='800' data-aos-delay='900'>
                     CELEBRATION
                 </h1>
                 <br></br>
-                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-delay='1100'>
+                <h1 className='text-white text-[5vw] leading-none' data-aos='fade-down' data-aos-duration='800' data-aos-delay='1100'>
                     CARNIVAL
                 </h1>
-                <h1 className='text-[#B57BFF] text-[4vw]' data-aos='fade-down' data-aos-delay='1300'>@ Campus Centre<br></br> & Auditorium</h1>
+                <h1 className='text-[#B57BFF] text-[4vw]' data-aos='fade-down' data-aos-duration='800' data-aos-delay='1300'>@ Campus Centre<br></br> & Auditorium</h1>
             </section>
           <section id='counter'>
               <CountdownTimer targetDate={LCC_DATE} suppressHydrationWarning={true}/>
@@ -78,7 +78,7 @@ export default function Countdown() {
               </div>
               <div className='flex flex-row'>
                 <div className='flex flex-wrap w-5/6 pt-4' data-aos-offset="50px">
-                    <div className='pl-24 lg:w-[20vw] w-[28vw] md:w-[24vw] inline-block' data-aos='flip-up' data-aos-duration='700' data-aos-delay='500'>
+                    <div className='pl-24 lg:w-[20vw] w-[28vw] md:w-[24vw] inline-block' data-aos='flip-up' data-aos-duration='800' data-aos-delay='500'>
                         <Image layout='responsive' src={top_left}/>
                     </div>
                       <div className='pl-6 relative font-ron text-[#74F8FF] lg:leading-5 md:leading-4 sm:text-[0.8vw] md:text-[0.9vw] lg:text-[1vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='700'>
@@ -90,7 +90,7 @@ export default function Countdown() {
                       </div>
                       <div className='ml-16 pt-4'>
                           {/*Add hover effect*/}
-                          <div className='relative' data-aos='flip-up' data-aos-duration='700' data-aos-delay='900'>
+                          <div className='relative' data-aos='flip-up' data-aos-duration='800' data-aos-delay='900'>
                               <div className='rounded-full w-36 h-36 bg-black opacity-10 mx-auto'></div>
                               <Link href='/home'><button className='absolute -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2 w-28
                                h-28 bg-[#E63B3B] rounded-full font-gotham hover:bg-[#5FFF6F]'>
@@ -102,17 +102,17 @@ export default function Countdown() {
                             <Image layout='responsive' src={button_squares}/>
                           </div>
                       </div>
-                      <div className='pl-24 pt-20 w-[20vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='500'>
+                      <div className='pl-24 pt-20 w-[20vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='500'>
                           <Image layout='responsive' src={bottom_left}/>
                       </div>
-                        <div className='pl-6 w-[35vw] pt-4' data-aos='flip-up' data-aos-duration='700' data-aos-delay='700'>
+                        <div className='pl-6 w-[35vw] pt-4' data-aos='flip-up' data-aos-duration='800' data-aos-delay='700'>
                             <Image layout='responsive' src={bottom_left2}/>
                         </div>
-                        <div className='pl-20 pt-10 w-[18vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='900'>
+                        <div className='pl-20 pt-10 w-[18vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='900'>
                             <Image layout='responsive' src={gps}/>
                         </div>
                     </div>
-                  <div className='-ml-16 pt-16 lg:w-[16vw] md:w-[12vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='1100'>
+                  <div className='-ml-16 pt-16 lg:w-[16vw] md:w-[12vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='1100'>
                       <Image layout='responsive' src={right}/>
                   </div>
               </div>

@@ -26,13 +26,13 @@ export const LuckyDrawTimer = ({ targetTime }) => {
   }
     return (
         <>
-       <div className='bg-[#596461] rounded-2xl text-center w-1/2 z-20 w-2/5'>
+       <div className='bg-[#596461] rounded-2xl text-center w-1/2 z-20 w-2/5 relative' data-aos='zoom-in' data-aos-delay='900' data-aos-duration='1200' data-aos-offset="50px">
             <table className='inline-block rounded-2xl bg-[#420059] w-11/12 my-2 border-4 border-gray-600 content-center'>
                 <div className='inline-block my-2'>
                     <thead className='text-[#B57BFF] text-[0.75vw] md:text-[1.5vw] font-ron'>Lucky Draw</thead>
                     <tbody>
-                        <tr className='text-[#B57BFF] text-[1vw] md:text-[1.75vw] md:space-x-20 space-x-10 font-ron'>
-                            <td className='inline-block' data-aos='zoom-in' data-aos-delay='500' data-aos-offset="50px">
+                        <tr className='text-[#B57BFF] text-[1vw] md:text-[1.75vw] md:space-x-20 space-x-10 font-ron' data-aos='flip-up' data-aos-delay='1200' data-aos-duration='800'>
+                            <td className='inline-block'>
                                 {hours_string[0]}{hours_string[1]} Hrs : {minutes_string[0]}{minutes_string[1]} Mins : {seconds_string[0]}{seconds_string[1]} Sec
                             </td>
                         </tr>
