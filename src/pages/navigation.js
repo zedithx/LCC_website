@@ -8,7 +8,7 @@ import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import bloom5 from "../../public/images/background/bloom5.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
-import fifth_rows from "../static/booth"
+import {fifth_rows, urop, overseas_opp} from "@/static/booth"
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 
@@ -57,11 +57,11 @@ export default function Navigation() {
               </section>
               <section id='directory' className='pt-10 pb-8'>
               {/*    Accordion UROP*/}
-
-              {/*    Accordion Overseas Op*/}
-
+                  <Accordion title="Undergraduate Research Opportunities Programme (1-4)" booth={urop}/>
+              {/*    Accordion overseas Op*/}
+                  <Accordion title="Overseas Opportunities (5-29)" booth={overseas_opp}/>
               {/*    Accordion Fifth Row*/}
-               <Accordion title="Undergraduate Research Opportunities Programme (1-4)" booth={fifth_rows}/>
+                  <Accordion title="Fifth Row (30-40)" booth={fifth_rows}/>
               {/*    Accordion Food Booths*/}
               </section>
             </div>

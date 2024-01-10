@@ -102,13 +102,13 @@ export default function Countdown() {
                             <Image layout='responsive' src={button_squares}/>
                           </div>
                       </div>
-                      <div className='pl-24 pt-20 w-[20vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='1300'>
+                      <div className='pl-24 pt-20 w-[20vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='500'>
                           <Image layout='responsive' src={bottom_left}/>
                       </div>
-                        <div className='pl-6 w-[35vw] pt-4' data-aos='flip-up' data-aos-duration='700' data-aos-delay='1500'>
+                        <div className='pl-6 w-[35vw] pt-4' data-aos='flip-up' data-aos-duration='700' data-aos-delay='700'>
                             <Image layout='responsive' src={bottom_left2}/>
                         </div>
-                        <div className='pl-20 pt-10 w-[18vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='1700'>
+                        <div className='pl-20 pt-10 w-[18vw]' data-aos='flip-up' data-aos-duration='700' data-aos-delay='900'>
                             <Image layout='responsive' src={gps}/>
                         </div>
                     </div>

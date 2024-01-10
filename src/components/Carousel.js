@@ -40,7 +40,7 @@ export default class Carousel extends Component {
                 <nav className="w-full md:space-x-10 pt-4 pl-8 font-gotham text-black text-[1vw]">
                   {[
                     ['UROP', [0]],
-                    ['Overseas', [1,2,3,4]],
+                    ['overseas', [1,2,3,4]],
                     ['Fifth Row', [5, 6]]
                   ].map(([title, index]) => (
                       // eslint-disable-next-line react/jsx-key
@@ -64,7 +64,7 @@ export default class Carousel extends Component {
                 {/*    <div className='relative'>*/}
                 {/*        <Link href='/luckydraw'*/}
                 {/*              className='border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md bg-[#E63B3B] py-3 px-12'>*/}
-                {/*            Overseas*/}
+                {/*            overseas*/}
                 {/*        </Link>*/}
                 {/*    </div>*/}
                 {/*</div>*/}

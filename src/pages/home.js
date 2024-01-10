@@ -16,6 +16,7 @@ import social from '../../public/images/logo/social.png'
 import entertainment from '../../public/images/logo/entertainment.png'
 import red_dots from '../../public/images/background/red_dots.png'
 import red_dot from '../../public/images/background/red_dot.png'
+import timeline from '../../public/images/posters/pubs/timeline.jpg'
 import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import Carousel from "@/components/Carousel";
 
@@ -178,19 +179,19 @@ export default function Home() {
                 <Carousel/>
               </div>
           </section>
-          <section id='poster'>
-          {/*    Insert poster here*/}
-          </section>
           <section id='timeline'>
-          <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>Where and When?</h1>
+              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]'>Where and When?</h1>
               <div className='w-11/12 inline-block pl-14 mt-4'>
                   <Image layout='responsive' src={pink_divider}/>
+              </div>
+              <div className='w-1/2 mt-4 mx-auto'>
+                  <Image layout='responsive' src={timeline}/>
               </div>
           </section>
           <section id='map'>
           {/*    Insert Map here   */}
           </section>
-          <section id='navigation-button' className='pb-20'>
+          <section id='navigation-button' className='pb-20 mt-20'>
             <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10'>
                 <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[1vw] text-[#0BFFE6] font-gotham inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
                     <h1 className='my-4 ml-6'>
