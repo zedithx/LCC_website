@@ -32,20 +32,20 @@ export const CountdownTimer = ({ targetDate }) => {
      }
     return (
         <>
-        <table className='pt-20 inline-block text-[#FFEEFB]'>
+        <table className='md:pt-20 pt-10 inline-block text-[#FFEEFB]'>
             <tbody>
-            <tr className='text-[9vw] md:text-[5vw] md:space-x-20 space-x-10 font-ron leading-9'>
+            <tr className='text-[4vw] md:text-[5vw] md:space-x-20 space-x-8 font-ron leading-9'>
                 <td className='inline-block' data-aos='zoom-in' data-aos-delay='1300' data-aos-offset="50px">
-                    {days_string[0]}{days_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Days</h1>
+                    {days_string[0]}{days_string[1]}: <h1 className='font-gotham text-[2vw] md:text-[1.2vw]'>Days</h1>
                 </td>
                 <td className='inline-block' data-aos='zoom-in' data-aos-delay='1500' data-aos-offset="50px">
-                    {hours_string[0]}{hours_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Hours</h1>
+                    {hours_string[0]}{hours_string[1]}: <h1 className='font-gotham text-[2vw] md:text-[1.2vw]'>Hours</h1>
                 </td>
                 <td className='inline-block' data-aos='zoom-in' data-aos-delay='1700' data-aos-offset="50px">
-                    {minutes_string[0]}{minutes_string[1]}: <br></br><h1 className='font-gotham text-[1.2vw]'>Minutes</h1>
+                    {minutes_string[0]}{minutes_string[1]}: <h1 className='font-gotham text-[2vw] md:text-[1.2vw]'>Minutes</h1>
                 </td>
                 <td className='inline-block' data-aos='zoom-in' data-aos-delay='1900' data-aos-offset="50px">
-                    {seconds_string[0]}{seconds_string[1]} <br></br><h1 className='font-gotham text-[1.2vw]'>Seconds</h1>
+                    {seconds_string[0]}{seconds_string[1]}: <h1 className='font-gotham text-[2vw] md:text-[1.2vw]'>Seconds</h1>
                 </td>
             </tr>
             </tbody>

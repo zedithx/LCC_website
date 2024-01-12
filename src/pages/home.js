@@ -20,6 +20,8 @@ import red_dot from '../../public/images/background/red_dot.png'
 import timeline from '../../public/images/posters/pubs/timeline.jpg'
 import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import Carousel from "@/components/Carousel";
+import LuckyDrawModal from "@/components/LuckyDrawModal";
+import FoodModal from "@/components/FoodModal";
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 export default function Home() {
@@ -146,16 +148,13 @@ export default function Home() {
                            </div>
                         </div>
                       <div className='flex flex-row justify-around pt-20 font-gotham-light text-black text-[1vw] font-bold'>
+                        {/* Modals */}
                         <div className='relative'>
-                            <Link href='/luckydraw' className='border-8 border-[#757575] hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-1 px-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                                Lucky Draw
-                            </Link>
+                            <LuckyDrawModal/>
                         </div>
                         <div className='relative'>
-                            <Link href='/food' className='border-8 border-[#757575] hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                                    Food
-                            </Link>
-                         </div>
+                            <FoodModal/>
+                        </div>
                   </div>
                   </div>
               </div>
@@ -192,7 +191,7 @@ export default function Home() {
               </div>
           </section>
           <section id='navigation-button' className='pb-20 mt-20'>
-            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>
+            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10' data-aos='fade-up' data-aos-duration='800'>
                 <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[1vw] text-[#0BFFE6] font-gotham inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
                     <h1 className='my-4 ml-6'>
                     For better navigation experience, please proceed to navigation page
