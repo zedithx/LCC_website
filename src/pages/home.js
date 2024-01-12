@@ -23,7 +23,7 @@ import Carousel from "@/components/Carousel";
 import LuckyDrawModal from "@/components/LuckyDrawModal";
 import FoodModal from "@/components/FoodModal";
 
-const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
+const LUCKYDRAW_TIMING = new Date("2024-01-24 18:00")
 export default function Home() {
     useEffect(() => {
             AOS.init();
@@ -52,7 +52,7 @@ export default function Home() {
           {/* Top Header */}
           <section id='top-header' className='font-ron pl-20 flex flex-row text-left'>
               <div className='pt-10'>
-                <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>27 Sept 2-6pm</h1>
+                <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>24 Jan 2-6pm</h1>
                 <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='700'>
                     LEARNING
                 </h1>
