@@ -46,8 +46,8 @@ export default class Carousel extends Component {
                     ['Fifth Row', [2]]
                   ].map(([title, index]) => (
                       // eslint-disable-next-line react/jsx-key
-                    <Link className={`border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md bg-[#E63B3B] py-3 px-12 
-                    ${index.includes(this.state.currentSlide) ? 'text-white bg-[#680000]' : 'bg-[#E63B3B]'}`}
+                    <Link className={`border-8 border-[#757575] rounded-full hover:bg-[#680000] hover:text-white drop-shadow-md py-3 px-12 
+                    ${index.includes(this.state.currentSlide) ? 'bg-[#680000] text-white' : 'bg-[#E63B3B]'}`}
                           onClick={() => {
                             this.setCurrentSlide(index[0]);
                           }} smooth={true} style={{cursor: 'pointer'}}>{title}</Link>

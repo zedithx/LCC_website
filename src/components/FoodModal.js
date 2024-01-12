@@ -19,10 +19,17 @@ const ModalBox = styled(Box)`
   overflow: hidden
 `;
 
-const ModalBoxMobile = styled(ModalBox)`
+const ModalBoxMobile = styled(Box)`
   @media (max-width: 600px) {
-    width: 90%;
-    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border: 4px solid #4B5563;
+    border-radius: 25px;
+    box-shadow: 24px;
+    overflow: hidden
   }
 `;
 
@@ -73,14 +80,14 @@ export default function FoodModal(props) {
               {isMobile ? (
           <div className={`opacity-0 ${show ? styles.fadeModalMobile : ""}`}>
               <ModalBoxMobile>
-                <Image src={food} layout='responsive'/>
+                  <Image src={food} layout='responsive'/>
               </ModalBoxMobile>
           </div>
           ) : (
           <div className={`opacity-0 ${show ? styles.fadeModal: ""}`}>
-              <ModalBox>
+            <ModalBox>
                 <Image src={food} layout='responsive'/>
-              </ModalBox>
+            </ModalBox>
           </div>
                   )}
         </Modal>

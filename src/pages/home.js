@@ -37,7 +37,7 @@ export default function Home() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-      <div className='bg-[#1C1C1C] bg-cover -z-20 h-auto w-full'>
+      <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full overflow-hidden'>
           <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
               <Image layout='responsive' src={home_background1}/>
           </div>
@@ -46,59 +46,59 @@ export default function Home() {
             <NaviBar/>
           </section>
           {/*Countdown Alert For Luckydraw*/}
-          <section id='luckydraw-countdown' className= 'pl-20 pt-32'>
+          <section id='luckydraw-countdown' className= 'pl-6 md:pl-20 md:mt-28 mt-20'>
               <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
           </section>
           {/* Top Header */}
-          <section id='top-header' className='font-ron pl-20 flex flex-row text-left'>
-              <div className='pt-10'>
+          <section id='top-header' className='relative font-ron md:pl-20 pl-8 pt-4 md:pt-0 flex flex-row items-center md:gap-6 text-left'>
+              <div className='md:-space-y-4 text-white text-[4.5vw] w-1/2'>
                 <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>24 Jan 2-6pm</h1>
-                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='700'>
+                <h1 data-aos='fade-left' data-aos-delay='700'>
                     LEARNING
                 </h1>
-                <br></br>
-                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='900'>
+                <h1 data-aos='fade-left' data-aos-delay='900'>
                     CELEBRATION
                 </h1>
-                <br></br>
-                <h1 className='text-white text-[4.5vw] leading-none' data-aos='fade-left' data-aos-delay='1100'>
+                <h1 data-aos='fade-left' data-aos-delay='1100'>
                     CARNIVAL
                 </h1>
-                <h1 className='text-[#B57BFF] text-[3vw] pt-4' data-aos='fade-right' data-aos-delay='1300'>@ Campus Centre & <br></br>Auditorium</h1>
-         </div>
-          <div className='pl-20 w-[45vw] z-10' data-aos='fade-left' data-aos-delay='1700'>
-              <Image layout='responsive' src={cuteasyraf}/>
-          </div>
+                <h1 className='text-[#B57BFF] text-[3vw]' data-aos='fade-left' data-aos-delay='1300'>@ Campus Centre & Auditorium</h1>
+              </div>
+              <div className='md:w-[40vw] w-[38vw] z-10' data-aos='fade-left' data-aos-delay='1700'>
+                  <Image layout='responsive' src={cuteasyraf}/>
+              </div>
+              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-3/4'>
+                 <Image layout='responsive' src={bloom2}/>
+              </div>
           </section>
           {/* Event explanation */}
           <section id='event-explanation'>
-              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/4 top-1/2 w-3/4'>
-                 <Image layout='responsive' src={bloom2}/>
-              </div>
-              <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
+              <div className='absolute left-1/2 -translate-x-1/2 w-full'>
                 <Image layout='responsive' src={home_background1}/>
-             </div>
-              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
-              <div className='w-11/12 inline-block pl-14 mt-4'>
-                  <Image layout='responsive' src={pink_divider}/>
               </div>
-              <div className='flex flex-row pt-10 justify-center gap-20'>
-                  <div className='bg-[#596461] w-5/12 rounded-2xl pb-4 text-center z-10' data-aos='fade-right' data-aos-delay='300' data-aos-duration='800'>
-                      <div className='w-[8vw] inline-block'>
+              <div className=''>
+                  <h1 className='md:ml-24 ml-8 md:pt-40 pt-20 font-ron md:text-[3vw] text-[4vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
+                  <div className='mx-auto w-[90vw] flex z-10'>
+                      <Image layout='responsive' src={pink_divider}/>
+                  </div>
+              </div>
+              <div className='flex md:flex-row flex-col pt-10 justify-center gap-20'>
+                  <div className='bg-[#596461] md:w-5/12 w-11/12 rounded-2xl mx-auto md:mx-0 pb-4 text-center z-10' data-aos='fade-right' data-aos-delay='300' data-aos-duration='800'>
+                      <div className='md:w-[8vw] w-[20vw] inline-block'>
                         <Image layout='responsive' src={social}/>
                       </div>
                       <div className='bg-[#191970] w-10/12 mx-auto border-4 pb-10 border-gray-600 relative text-[#0BFFE6] font-gotham-light'>
-                           <h1 className='text-[.5vw] absolute top-1 left-3'>
+                          <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 md:left-3 left-2'>
                                Log: #30194
-                           </h1>
-                          <h1 className='text-[.5vw] absolute top-1 right-3'>
+                          </h1>
+                          <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 md:right-3 right-2'>
                                Date 27092023
-                           </h1>
-                          <h1 className='text-[2vw] font-ron pt-6'>
-                          Projects
+                          </h1>
+                          <h1 className='md:text-[2vw] text-[5vw] font-ron pt-6'>
+                              Projects
                           </h1>
                           <hr className='w-11/12 mx-auto border-[#5FFF6F]'/>
-                          <div className='pl-8 w-10/12 pt-4 text-[1.2vw] text-left'>
+                          <div className='pl-8 w-10/12 pt-4 md:text-[1.2vw] text-[3.5vw] text-left'>
                             <h1 className='font-bold'>Undergraduate Research Opportunity Programme (UROP)</h1>
                               <h1 className='text-white'>
                                   Undergraduates can take part and initiate research projects while supervised by a member of faculty.
@@ -115,27 +115,27 @@ export default function Home() {
                               </h1>
                           </div>
                         </div>
-                      <div className='pl-10 pt-4 w-[8vw]'>
+                      <div className='pl-10 pt-4 md:w-[8vw] w-[28vw]'>
                         <Image src={red_dots}/>
                       </div>
                   </div>
-                  <div className='bg-[#596461] w-5/12 rounded-2xl text-center z-10' data-aos='fade-left' data-aos-delay='500' data-aos-duration='800'>
+                  <div className='bg-[#596461] md:w-5/12 w-11/12 pb-16 md:pb-0 mx-auto md:mx-0 rounded-2xl text-center z-10' data-aos='fade-left' data-aos-delay='300' data-aos-duration='800'>
                       {/*TO do carousel*/}
-                      <div className='w-[4vw] inline-block pt-6'>
+                      <div className='md:w-[4vw] w-[10vw] inline-block pt-6'>
                         <Image layout='responsive' src={entertainment}/>
                       </div>
                        <div className='bg-[#191970] w-10/12 mx-auto border-4 text-[#0BFFE6] border-gray-600 font-gotham-light mt-6 pb-10 relative'>
-                           <h1 className='text-[.5vw] absolute top-1 left-3'>
+                           <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 left-3'>
                                Log: #30195
                            </h1>
-                          <h1 className='text-[.5vw] absolute top-1 right-3'>
+                          <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 right-3'>
                                Date 27092023
                            </h1>
-                          <h1 className='text-[2vw] font-ron pt-6'>
+                          <h1 className='md:text-[2vw] text-[5vw] font-ron pt-6'>
                           Entertainment
                           </h1>
                            <hr className='w-11/12 mx-auto border-[#5FFF6F]'/>
-                           <div className='pl-8 w-10/12 pt-4 text-[1.2vw] text-left'>
+                           <div className='pl-8 w-10/12 pt-4 md:text-[1.2vw] text-[3.5vw] text-left'>
                             <h1 className='font-bold'>Lucky Draw</h1>
                               <h1 className='text-white'>
                                   Stand a chance to win AirPods Pro 2nd Gen, PRISM 28-inch monitor W280, Bose SoundLink Mini II, Phillips Airfryer, WeWatch V50 Projector
@@ -147,7 +147,7 @@ export default function Home() {
                               </h1>
                            </div>
                         </div>
-                      <div className='flex flex-row justify-around pt-20 font-gotham-light text-black text-[1vw] font-bold'>
+                      <div className='flex flex-row justify-around md:pt-20 pt-12 font-gotham-light text-black md:text-[1vw] text-[3vw] font-bold'>
                         {/* Modals */}
                         <div className='relative'>
                             <LuckyDrawModal/>

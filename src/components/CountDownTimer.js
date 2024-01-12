@@ -3,30 +3,22 @@ import {useCountdown} from "@/hooks/useCountdown";
 
 export const CountdownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
-
+  let [days_string, hours_string, minutes_string, seconds_string] = [String(days), String(hours), String(minutes), String(seconds)];
   if (days + hours + minutes + seconds <= 0) {
-    return (
-        <tr className='md:text-[4.5vw]'>
-            <td className='md:px-4'>00</td>
-            <td className='md:px-4'>00</td>
-            <td className='md:px-4'>00</td>
-            <td className='md:px-4'>00</td>
-        </tr>
-    )
+      days_string = '00'
+      hours_string = '00'
+      minutes_string = '00'
+      seconds_string = '00'
   } else {
-     let days_string = String(days);
      if (days_string < 10){
          days_string = '0' + days_string
      }
-     let hours_string = String(hours)
       if (hours_string < 10){
          hours_string = '0' + hours_string
      }
-      let minutes_string = String(minutes)
       if (minutes_string < 10){
          minutes_string = '0' + minutes_string
      }
-      let seconds_string = String(seconds)
       if (seconds_string < 10){
          seconds_string = '0' + seconds_string
      }

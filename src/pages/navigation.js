@@ -25,7 +25,7 @@ export default function Navigation() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-          <div className='bg-[#1C1C1C] bg-cover -z-20 h-auto w-full'>
+          <div className='bg-[1D1C20] bg-cover -z-20 h-auto w-full'>
               <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
                   <Image layout='responsive' src={home_background1}/>
               </div>

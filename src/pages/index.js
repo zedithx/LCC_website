@@ -53,7 +53,7 @@ export default function Countdown() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-      <div className='bg-[#1C1C1C] bg-cover md:h-auto h-full h-auto text-center'>
+      <div className='bg-[1D1C20] bg-cover md:h-auto h-full h-auto text-center'>
           <section id='sutd logo'>
                 <div className='absolute z-10 left-8 top-8 md:w-[10vw] w-[24vw]'>
                     <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>

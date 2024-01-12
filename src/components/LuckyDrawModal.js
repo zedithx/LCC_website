@@ -75,17 +75,17 @@ export default function LuckyDrawModal(props) {
           <div className={`opacity-0 ${show ? styles.fadeModalMobile : ""}`}>
             <ModalBoxMobile>
                 <div className='mx-auto text-[#0BFFE6] font-gotham-light relative'>
-                    <h1 className='text-[.5vw] absolute top-1 left-3'>
+                    <h1 className='text-[2vw] absolute top-1 left-3'>
                        Log: #30196
                     </h1>
-                    <h1 className='text-[.5vw] absolute top-1 right-3'>
+                    <h1 className='text-[2vw] absolute top-1 right-3'>
                        Date 27092023
                     </h1>
-                    <h1 className='text-[2vw] text-center font-ron pt-6'>
+                    <h1 className='text-[6vw] text-center font-ron pt-6'>
                   Lucky Draw
                   </h1>
                    <hr className='w-11/12 mx-auto border-[#5FFF6F]'/>
-                   <div className='pl-8 w-10/12 pt-4 text-[1.2vw] text-left'>
+                   <div className='pl-8 w-10/12 pt-4 md:text-[1.2vw] text-[3.5vw] text-left'>
                     <h1 className='font-bold'>How to participate?</h1>
                       <h1 className='text-white'>
                           1. Go to any booth and scan the QR code in the booth.
