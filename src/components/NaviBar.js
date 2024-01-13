@@ -51,13 +51,13 @@ export default function NaviBar() {
                 <br></br>
                 <ul className="absolute z-20 top-8 right-0 pl-4 pt-14 pb-2 bg-gradient-to-r from-[#313866] to-sky-800 rounded-2xl text-right" data-aos='fade-left' data-aos-duration='700'>
                     {[
-                        ['Countdown', '/'],
+                    ['Countdown', '/'],
                     ['Home', '/home'],
                     ['Navigation', '/navigation'],
                   ].map(([title, url]) => (
                         // eslint-disable-next-line react/jsx-key
                     <li className='pb-2'>
-                        <Link onClick={() => setNavState(!navState)} href={url} smooth={true} className="pl-2 mr-6 text-[2vw] text-white font-semibold font-ron">{title}</Link>
+                        <Link onClick={() => setNavState(!navState)} href={url} smooth={true} className="pl-2 mr-6 md:text-[2vw] text-[3vw] text-white font-semibold font-ron">{title}</Link>
                     </li>
                     ))}
                 </ul>
