@@ -180,38 +180,52 @@ export default function Home() {
               <div className='mx-auto w-[90vw] flex z-10'>
                       <Image layout='responsive' src={pink_divider}/>
               </div>
-              <div className='bg-[#596461] rounded-2xl mt-6 w-11/12 mx-auto pt-4 relative pb-10 z-10'>
-                  <div className='absolute right-14 top-10'>
+              <div className='bg-[#596461] rounded-2xl mt-6 w-11/12 mx-auto md:pt-4 pt-8 relative pb-10 z-10'>
+                  <div className='absolute md:right-14 md:top-10 right-4 top-2'>
                     <Image src={red_dot}/>
                   </div>
                 <Carousel/>
               </div>
           </section>
           <section id='timeline' className='relative'>
-              <h1 className='pl-20 pt-40 font-ron text-[3vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Where and When?</h1>
-              <div className='w-11/12 inline-block pl-14 mt-4'>
+              <h1 className='md:pl-20 md:pt-40 pt-20 font-ron md:text-[3vw] text-[7vw] text-[#B57BFF] md:text-left text-center' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Where and When?</h1>
+              <div className='mx-auto w-[90vw] flex z-10'>
                   <Image layout='responsive' src={pink_divider}/>
               </div>
-              <div className='w-1/2 mt-4 mx-auto z-20 relative' data-aos='flip-up' data-aos-delay='300' data-aos-duration='1200'>
+              <div className='md:w-1/2 w-10/12 mt-4 mx-auto z-20 overflow-hidden
+               relative border border-4 border-[#4B5563] rounded-2xl' data-aos='flip-up' data-aos-delay='300' data-aos-duration='1200'>
                   <Image layout='responsive' src={timeline}/>
               </div>
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-full'>
                 <Image src={bloom6} layout='responsive'/>
               </div>
           </section>
-          <section id='navigation-button' className='pb-20 mt-20'>
-            <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto space-x-10' data-aos='fade-up' data-aos-duration='800'>
-                <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[1vw] text-[#0BFFE6] font-gotham inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
+          {/* For desktop*/}
+          <section id='navigation-button' className='hidden md:block pb-20 mt-20'>
+            <div className='bg-[#596461] flex flex-row items-center rounded-2xl w-11/12 mx-auto gap-4' data-aos='fade-up' data-aos-duration='800'>
+                <div className='bg-[#191970] ml-10 my-4 md:text-[1.3vw] text-[#0BFFE6] font-gotham
+                inline-block rounded-3xl w-9/12 mx-auto border-4 border-blue-950'>
                     <h1 className='my-4 ml-6'>
                     For better navigation experience, please proceed to navigation page
                     </h1>
                 </div>
-                <div className='inline-block w-1/6'>
-                  <Link href='/navigation' className='md:text-[1.2vw] text-[1vw] font-gotham border-8 border-[#757575] hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 inline-block'>
-                      Navigation
+                <div className='w-1/6'>
+                    <Link href='/navigation' className='md:text-[1.2vw] text-[1vw] font-gotham
+                     border-8 border-[#757575] hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 lg:px-8 px-4 inline-block'>Navigation
                     </Link>
                 </div>
             </div>
+          </section>
+          {/*  For mobile */}
+          <section className='md:hidden'>
+              <h1 className='md:hidden font-ron text-white text-center text-[5vw] mt-8 w-11/12 mx-auto'>
+                  Click the button below to head to the Navigation page
+              </h1>
+              <div className='mx-auto text-center py-6'>
+                  <Link href='/navigation' className='rounded-full text-[4vw] sm:text-[3.5vw] font-gotham sm:border-8 border-4 border-[#757575]
+                  hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 inline-block'>Navigation
+                  </Link>
+              </div>
           </section>
       </div>
       </>

@@ -10,15 +10,15 @@ export default function Accordion(props){
     const booths = props.booth
     return (
         <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto mb-4'>
-            <div className='space-x-20 py-4 flex flex-wrap'>
-                <div className='bg-[#191970] ml-10 md:text-[1.3vw] text-[1vw]
-                 text-[#0BFFE6] font-ron inline-block w-9/12 border-4 border-gray-600'>
-                    <h1 className='ml-10 py-4 text-[1.4vw]'>
+            <div className='md:space-x-20 space-x-6 items-center py-4 flex flex-row'>
+                <div className='bg-[#191970] md:ml-10 ml-4 md:text-[1.3vw] text-[1vw]
+                 text-[#0BFFE6] font-ron md:w-9/12 w-7/12 border-4 border-gray-600'>
+                    <h1 className='md:ml-10 ml-4 py-4 md:text-[1.4vw] text-[3vw]'>
                         {props.title}
                     </h1>
                 </div>
                 <button onClick={handleAccordion}
-                        className='inline-block border-8 border-[#2C2C2C] mt-2 w-[4vw] h-[4vw] bg-[#B20202] hover:bg-[#5FFF6F]'>
+                        className='md:border-8 border-8 border-[#2C2C2C] md:w-[4vw] md:h-[4vw] w-[16vw] h-[16vw] bg-[#B20202] hover:bg-[#5FFF6F]'>
                 </button>
              </div>
             <div className={`flex flex-wrap gap-4 justify-around transition-all duration-500 ease-in-out ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`}>

@@ -9,6 +9,7 @@ import bloom5 from "../../public/images/background/bloom5.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
 import {fifth_rows, urop, overseas_opp} from "@/static/booth"
+import general_map from "../../public/images/LCCImages/general_map.jpg"
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 
@@ -25,7 +26,7 @@ export default function Navigation() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-          <div className='bg-[1D1C20] bg-cover -z-20 h-auto w-full'>
+          <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full'>
               <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
                   <Image layout='responsive' src={home_background1}/>
               </div>
@@ -43,15 +44,16 @@ export default function Navigation() {
                   </div>
               </section>
               {/*Countdown Alert For Luckydraw*/}
-              <section id='luckydraw-countdown' className= 'pl-20 pt-32'>
+              <section id='luckydraw-countdown' className= 'pl-8 pt-32'>
                   <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
               </section>
               <section id='navigation-map'>
-                  <h1 className='pl-20 pt-40 font-ron text-[5vw] text-[#B57BFF]'>Navigation</h1>
-              {/*    Insert Image of map here that is relative and has z value more than 0*/}
-                  <div className='relative z-10 h-72 w-full'>
+                  <h1 className='pl-8 pt-10 font-ron text-[5vw] text-[#B57BFF] relative z-20'>Navigation</h1>
+              {/*    Insert Image of map here: carousel*/}
+                  <div className='pl-8 w-9/12 z-20 relative'>
+                      <Image src={general_map}/>
                   </div>
-                  <h1 className='font-gotham text-white text-center'>
+                  <h1 className='font-gotham text-white text-center mt-14'>
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
               </section>
