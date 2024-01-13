@@ -7,7 +7,7 @@ import {useEffect} from "react";
 
 import NaviBar from '../components/NaviBar'
 import home_background1 from '../../public/images/background/home_background1.png'
-import lcclogo from '../../public/images/LCCImages/lcclogo.png'
+import main_rocket from '../../public/images/rocket/rocket_arrow.png'
 import bloom2 from '../../public/images/background/bloom2.png'
 import bloom3 from '../../public/images/background/bloom3.png'
 import bloom4 from '../../public/images/background/bloom4.png'
@@ -22,6 +22,7 @@ import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import Carousel from "@/components/Carousel";
 import LuckyDrawModal from "@/components/LuckyDrawModal";
 import FoodModal from "@/components/FoodModal";
+import styles from "./lcc.module.css"
 
 const LUCKYDRAW_TIMING = new Date("2024-01-24 18:00")
 export default function Home() {
@@ -38,7 +39,7 @@ export default function Home() {
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
       <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full overflow-hidden'>
-          <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
+          <div className='absolute left-1/2 -translate-x-1/2 w-full'>
               <Image layout='responsive' src={home_background1}/>
           </div>
           {/* Navibar + logo */}
@@ -50,9 +51,10 @@ export default function Home() {
               <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
           </section>
           {/* Top Header */}
-          <section id='top-header' className='relative font-ron md:pl-20 pl-8 pt-4 md:pt-0 md:mt-10 flex flex-row items-center md:gap-6 text-left'>
-              <div className='md:-space-y-4 text-white text-[4.5vw] w-1/2'>
-                <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>24 Jan 2-6pm</h1>
+          <section id='top-header' className='relative font-ron md:pl-20 pl-8 md:pt-0 md:mt-10 mt-6 flex flex-row
+          md:gap-[22vw] gap-[18vw] text-left'>
+              <div className='md:-space-y-4 text-white md:text-[4.5vw] text-[5vw] w-1/2 z-10'>
+                <h1 className='text-[#25F3FF] md:text-[4vw] text-[4.5vw]' data-aos='fade-left' data-aos-delay='500'>24 Jan 2-6pm</h1>
                 <h1 data-aos='fade-left' data-aos-delay='700'>
                     LEARNING
                 </h1>
@@ -62,15 +64,54 @@ export default function Home() {
                 <h1 data-aos='fade-left' data-aos-delay='1100'>
                     CARNIVAL
                 </h1>
-                <h1 className='text-[#B57BFF] text-[3vw]' data-aos='fade-left' data-aos-delay='1300'>
+                <h1 className='text-[#B57BFF] md:text-[3vw] text-[4vw]' data-aos='fade-left' data-aos-delay='1300'>
                     @ Campus Centre & Auditorium
                 </h1>
               </div>
-              <div className='md:w-[30vw] w-[34vw] z-10 rounded-full' data-aos='fade-left' data-aos-delay='1700'>
-                  <Image layout='responsive' src={lcclogo}/>
+              {/*Rocket*/}
+              <div data-aos="fade-up" data-aos-offset='200' data-aos-delay='1500' data-aos-duration='800'>
+                <div id='rocket' className='lg:scale-[1.75] md:scale-125 sm:scale-100 scale-[.65] md:mt-48 mt-4'>
+                  <div className={styles.body}>
+                    <div className={styles.top}>
+                        <div className={styles.light}></div>
+                            <div className={styles.antenna}></div>
+                            <div className={styles.base2}></div>
+                            <div className={styles.base1}></div>
+                        </div>
+                    <div className={styles.glass}>
+                    <div className={styles.reflection}></div>
+                    </div>
+                      <div className={styles.flag}>
+                        <img src="https://i.postimg.cc/02tkCh3m/1682594977157.png" width="20" height="20" alt="" />
+                        </div>
+                          <div className={`${styles.boster} ${styles.bosterL}`}>
+                            <p> Universe  </p>
+                          </div>
+                          <div className={`${styles.boster} ${styles.bosterR}`}> <p> Meta </p></div>
+                          <div className={styles.ring}>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                            <div className={styles.s1}></div>
+                          </div>
+                          <div className={styles.fire}>
+                            <div className={`${styles.flame} ${styles.h1}`}></div>
+                            <div className={`${styles.flame} ${styles.h2}`}></div>
+                            <div className={`${styles.flame} ${styles.h3}`}></div>
+                            <div className={`${styles.flame} ${styles.h4}`}></div>
+                            <div className={`${styles.flame} ${styles.h5}`}></div>
+                          </div>
+                        </div>
+                </div>
               </div>
+              {/*<div className='md:w-[50vw] w-[34vw] z-10 rounded-full' data-aos='fade-left' data-aos-delay='1700'>*/}
+              {/*    <Image alt='rocket' src={main_rocket}/>*/}
+              {/*</div>*/}
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-3/4'>
-                 <Image layout='responsive' src={bloom2}/>
+                 <Image alt='bloom2' src={bloom2}/>
               </div>
           </section>
           {/* Event explanation */}
@@ -79,7 +120,7 @@ export default function Home() {
                 <Image layout='responsive' src={home_background1}/>
               </div>
               <div className=''>
-                  <h1 className='md:ml-24 md:pt-40 pt-20 md:text-left text-center font-ron md:text-[3vw] text-[6vw] text-[#B57BFF]'
+                  <h1 className='md:ml-24 md:pt-40 pt-12 md:text-left text-center font-ron md:text-[3vw] text-[6vw] text-[#B57BFF]'
                       data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
                   <div className='mx-auto w-[90vw] flex z-10'>
                       <Image layout='responsive' src={pink_divider}/>
@@ -187,10 +228,18 @@ export default function Home() {
                 <Carousel/>
               </div>
           </section>
+           <div className='absolute left-1/2 -translate-x-1/2 w-full'>
+                <Image layout='responsive' src={home_background1}/>
+              </div>
           <section id='timeline' className='relative'>
               <h1 className='md:pl-20 md:pt-40 pt-20 font-ron md:text-[3vw] text-[7vw] text-[#B57BFF] md:text-left text-center' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Where and When?</h1>
               <div className='mx-auto w-[90vw] flex z-10'>
                   <Image layout='responsive' src={pink_divider}/>
+              </div> <div className='absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-full'>
+                <Image layout='responsive' src={home_background1}/>
+              </div>
+               <div className='absolute left-1/2 top-2/3 -translate-x-1/2 w-full'>
+                <Image layout='responsive' src={home_background1}/>
               </div>
               <div className='md:w-1/2 w-10/12 mt-4 mx-auto z-20 overflow-hidden
                relative border border-4 border-[#4B5563] rounded-2xl' data-aos='flip-up' data-aos-delay='300' data-aos-duration='1200'>
@@ -198,6 +247,9 @@ export default function Home() {
               </div>
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-full'>
                 <Image src={bloom6} layout='responsive'/>
+              </div>
+               <div className='absolute left-1/2 -translate-x-1/2 w-full'>
+                <Image layout='responsive' src={home_background1}/>
               </div>
           </section>
           {/* For desktop*/}
@@ -223,7 +275,8 @@ export default function Home() {
               </h1>
               <div className='mx-auto text-center py-6'>
                   <Link href='/navigation' className='rounded-full text-[4vw] sm:text-[3.5vw] font-gotham sm:border-8 border-4 border-[#757575]
-                  hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 inline-block'>Navigation
+                  hover:bg-[#5FFF6F] drop-shadow-md bg-[#E63B3B] py-3 px-8 inline-block'>
+                      Navigation
                   </Link>
               </div>
           </section>

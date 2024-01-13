@@ -47,13 +47,16 @@ export default function Navigation() {
               <section id='luckydraw-countdown' className= 'pl-8 pt-32'>
                   <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
               </section>
+              <div className='absolute left-1/2 top-2/3 -translate-x-1/2 w-full'>
+                <Image layout='responsive' src={home_background1}/>
+              </div>
               <section id='navigation-map'>
                   <h1 className='pl-8 pt-10 font-ron text-[5vw] text-[#B57BFF] relative z-20'>Navigation</h1>
               {/*    Insert Image of map here: carousel*/}
                   <div className='pl-8 w-9/12 z-20 relative'>
                       <Image src={general_map}/>
                   </div>
-                  <h1 className='font-gotham text-white text-center mt-14'>
+                  <h1 className='w-10/12 mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
               </section>

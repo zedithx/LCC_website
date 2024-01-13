@@ -46,3 +46,229 @@
   animation: fadeIn 1s ease-in-out 0.2s forwards;
 }
 
+.body {
+  height: 10em;
+  width: 4em;
+  background-color: #3ca7f5;
+  /*position: inline-block;*/
+  display: inline-block;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+}
+
+.top {
+  position: absolute;
+  height: 2em;
+  width: 1em;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.light {
+  position: absolute;
+  height: 0.5em;
+  width: 0.5em;
+  top: -0.5em;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  animation: blink 1s linear infinite alternate-reverse;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    background-color: black;
+  }
+}
+
+.antenna {
+  position: absolute;
+  height: 1.5em;
+  width: 0.1em;
+  bottom: 0;
+  left: 50%;
+  background-color: #3ca7f5;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+}
+.base2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1.1em;
+  width: 0.5em;
+  background-color: #3ca7f5;
+  transform: translate(-50%, -50%);
+}
+
+.base1 {
+  position: absolute;
+  height: 0.9em;
+  width: 1em;
+  bottom: 0;
+  left: 50%;
+  background-color: #3ca7f5;
+  transform: translate(-50%, -50%);
+}
+
+.glass {
+  position: absolute;
+  height: 3em;
+  width: 2em;
+  background: url('https://i.postimg.cc/sD7SQ2y3/giphy-2.gif') ;
+  border-radius: 20px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reflection {
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: white;
+  border-radius: 3px;
+  right: 0.2em;
+  top: 0.5em;
+  filter: blur(0.06em);
+}
+
+.flag {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.boster {
+  position: absolute;
+  height: 5em;
+  width: 2em;
+  background-color: #b4d3e9;
+  border-radius: 7px;
+  z-index: 2;
+}
+.bosterL {
+  bottom: 0em;
+  left: -1em;
+}
+.bosterL p{
+  transform: rotate(-90deg);
+  position: relative;
+  top: 45px;
+  font-size: 9px;
+  font-weight: 1000;
+}
+
+.bosterR {
+  bottom: 0em;
+  right: -1em;
+}
+
+.bosterR p{
+  transform: rotate(90deg);
+  position: relative;
+  top: 27px;
+  font-size: 9px;
+  font-weight: 1000;
+}
+.ring {
+  position: absolute;
+  height: 1em;
+  width: 4em;
+  background-color: #275792;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s1 {
+  height: 0.5em;
+  width: 0.2em;
+  background-color: black;
+}
+
+.fire {
+  position: absolute;
+  height: 5em;
+  width: 4em;
+  bottom: -5em;
+  display: flex;
+  justify-content: space-around;
+  z-index: 0;
+}
+
+.flame {
+  position: relative;
+  top: -0.3em;
+  height: 5em;
+  width: 0.5em;
+  background-color: #f6a728;
+  border-radius: 1px;
+}
+
+.flame.h1 {
+  height: 4em;
+  animation: flameGrowH1 0.5s linear 0.5s infinite alternate-reverse;
+}
+
+.flame.h2 {
+  height: 3em;
+  animation: flameGrowH2 0.5s linear 1s infinite alternate-reverse;
+  background-color: #f66928;
+}
+
+.flame.h3 {
+  height: 5em;
+  animation: flameGrowH3 0.5s linear 1.2s infinite alternate-reverse;
+}
+
+.flame.h4 {
+  height: 5em;
+  animation: flameGrowH3 0.4s linear 1s infinite alternate-reverse;
+  background-color: #f66928;
+}
+
+.flame.h5 {
+  height: 5em;
+  animation: flameGrowH3 0.6s linear 1.5s infinite alternate-reverse;
+}
+
+@keyframes flameGrowH1 {
+  0% {
+    height: 4em;
+  }
+
+  100% {
+    height: 6em;
+  }
+}
+
+@keyframes flameGrowH2 {
+  0% {
+    height: 4em;
+  }
+
+  100% {
+    height: 6em;
+  }
+}
+@keyframes flameGrowH3 {
+  0% {
+    height: 4em;
+  }
+
+  100% {
+    height: 6em;
+  }
+}

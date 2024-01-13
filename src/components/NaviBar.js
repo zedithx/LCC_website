@@ -7,7 +7,7 @@ export default function NaviBar() {
     const [navState, setNavState] = useState(false)
     return (
     <>
-        <div className='absolute z-20 left-8 top-8 md:w-[10vw] w-[24vw]'>
+        <div className='absolute z-20 left-8 top-8 md:w-[10vw] w-[18vw]'>
             <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
         </div>
         <button

@@ -1,6 +1,14 @@
 import {Component, useState} from "react";
 import Image from "next/image";
+import rocket from '../../public/images/rocket/rocket_arrow.png'
+import { Link } from "react-scroll"
 
+const transitionStyles = {
+  entering: { opacity: 0, maxHeight: 0 },
+  entered: { opacity: 1, maxHeight: '40000px' }, // Adjust the maxHeight value as needed
+  exiting: { opacity: 0, maxHeight: 0 },
+  exited: { opacity: 0, maxHeight: 0 },
+};
 
 export default function Accordion(props){
     const [accordionOpen, setAccordionOpen] = useState(false);
@@ -9,10 +17,9 @@ export default function Accordion(props){
     }
     const booths = props.booth
     return (
-        <div className='bg-[#596461] rounded-2xl w-11/12 mx-auto mb-4'>
+        <div id='top' className='bg-[#596461] rounded-2xl w-11/12 mx-auto mb-4'>
             <div className='md:space-x-20 space-x-6 items-center py-4 flex flex-row'>
-                <div className='bg-[#191970] md:ml-10 ml-4 md:text-[1.3vw] text-[1vw]
-                 text-[#0BFFE6] font-ron md:w-9/12 w-7/12 border-4 border-gray-600'>
+                <div className='bg-[#191970] md:ml-10 ml-4 text-[#0BFFE6] font-ron md:w-9/12 w-7/12 border-4 border-gray-600'>
                     <h1 className='md:ml-10 ml-4 py-4 md:text-[1.4vw] text-[3vw]'>
                         {props.title}
                     </h1>
@@ -21,22 +28,23 @@ export default function Accordion(props){
                         className='md:border-8 border-8 border-[#2C2C2C] md:w-[4vw] md:h-[4vw] w-[16vw] h-[16vw] bg-[#B20202] hover:bg-[#5FFF6F]'>
                 </button>
              </div>
-            <div className={`flex flex-wrap gap-4 justify-around transition-all duration-500 ease-in-out ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`}>
+            <div className={`flex flex-wrap gap-4 justify-around transition-all duration-500 ease-in-out 
+            ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`} style={transitionStyles[accordionOpen ? 'entered' : 'exited']}>
             {accordionOpen &&
             booths.map((booth) => {
                 return(
                     <>
-                        <div className='bg-[#420059] border-4 px-4 pt-4 pb-10 border-gray-600 w-5/12'>
+                        <div className='bg-[#420059] border-4 px-4 pt-4 mx-auto md:mx-0 pb-10 border-gray-600 md:w-5/12 w-11/12'>
                             {/*Put Image instead of pink square here*/}
                             <Image layout='responsive' loading='lazy' src={booth.poster}/>
                             {/*<div className='bg-[#D587FA] h-40'>*/}
                             {/*</div>*/}
-                            <div className='font-gotham text-[#D587FA] pt-2 text-[1.8vw]'>
+                            <div className='font-gotham text-[#D587FA] pt-2 md:text-[1.8vw] text-[5vw]'>
                                 <h1>{booth.number}</h1>
                                 <h1>{booth.title}</h1>
                             </div>
                             {booth.description && (
-                            <div className='font-gotham text-white pt-2 inline-block'>
+                            <div className='font-gotham text-white md:text-[1.3vw] text-[4vw] pt-2 inline-block'>
                                 <h1>{booth.description}</h1>
                             </div>
                                 )}
@@ -45,6 +53,19 @@ export default function Accordion(props){
                 )
             })}
             </div>
+            {accordionOpen && (
+            <>
+                <div className='flex items-center relative py-14'>
+                    <h1 className='font-gotham text-center text-white text-[3.5vw] w-full'>Press the rocket to go back up!</h1>
+                    <div className='absolute right-4 w-[10vw]'>
+                        <Link to='top' smooth={true} style={{cursor: 'pointer'}}>
+                            <Image alt='rocket' src={rocket}/>
+                        </Link>
+                        {/*<RocketIcon className='mr-10 mb-10 text-white' style={{cursor: 'pointer', fontSize: 100}}/>*/}
+                    </div>
+                </div>
+            </>
+                    )}
         </div>
 
     )
