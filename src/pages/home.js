@@ -7,7 +7,7 @@ import {useEffect} from "react";
 
 import NaviBar from '../components/NaviBar'
 import home_background1 from '../../public/images/background/home_background1.png'
-import cuteasyraf from '../../public/images/LCCImages/cuteasyraf.png'
+import lcclogo from '../../public/images/LCCImages/lcclogo.png'
 import bloom2 from '../../public/images/background/bloom2.png'
 import bloom3 from '../../public/images/background/bloom3.png'
 import bloom4 from '../../public/images/background/bloom4.png'
@@ -50,7 +50,7 @@ export default function Home() {
               <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
           </section>
           {/* Top Header */}
-          <section id='top-header' className='relative font-ron md:pl-20 pl-8 pt-4 md:pt-0 flex flex-row items-center md:gap-6 text-left'>
+          <section id='top-header' className='relative font-ron md:pl-20 pl-8 pt-4 md:pt-0 md:mt-10 flex flex-row items-center md:gap-6 text-left'>
               <div className='md:-space-y-4 text-white text-[4.5vw] w-1/2'>
                 <h1 className='text-[#25F3FF] text-[3.5vw]' data-aos='fade-left' data-aos-delay='500'>24 Jan 2-6pm</h1>
                 <h1 data-aos='fade-left' data-aos-delay='700'>
@@ -62,10 +62,12 @@ export default function Home() {
                 <h1 data-aos='fade-left' data-aos-delay='1100'>
                     CARNIVAL
                 </h1>
-                <h1 className='text-[#B57BFF] text-[3vw]' data-aos='fade-left' data-aos-delay='1300'>@ Campus Centre & Auditorium</h1>
+                <h1 className='text-[#B57BFF] text-[3vw]' data-aos='fade-left' data-aos-delay='1300'>
+                    @ Campus Centre & Auditorium
+                </h1>
               </div>
-              <div className='md:w-[40vw] w-[38vw] z-10' data-aos='fade-left' data-aos-delay='1700'>
-                  <Image layout='responsive' src={cuteasyraf}/>
+              <div className='md:w-[30vw] w-[34vw] z-10 rounded-full' data-aos='fade-left' data-aos-delay='1700'>
+                  <Image layout='responsive' src={lcclogo}/>
               </div>
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-3/4'>
                  <Image layout='responsive' src={bloom2}/>
@@ -77,7 +79,8 @@ export default function Home() {
                 <Image layout='responsive' src={home_background1}/>
               </div>
               <div className=''>
-                  <h1 className='md:ml-24 ml-8 md:pt-40 pt-20 font-ron md:text-[3vw] text-[4vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
+                  <h1 className='md:ml-24 md:pt-40 pt-20 md:text-left text-center font-ron md:text-[3vw] text-[6vw] text-[#B57BFF]'
+                      data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>What is this event</h1>
                   <div className='mx-auto w-[90vw] flex z-10'>
                       <Image layout='responsive' src={pink_divider}/>
                   </div>
@@ -164,14 +167,20 @@ export default function Home() {
           </div>
           {/*Features*/}
           <section id='features'>
-            <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
+              <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
                  <Image layout='responsive' src={bloom3}/>
               </div>
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/3 w-full'>
                  <Image layout='responsive' src={bloom4}/>
               </div>
-            <h1 className='pl-20 pt-20 font-ron text-[2.5vw] text-[#B57BFF]' data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>Featuring</h1>
-              <div className='bg-[#596461] rounded-2xl mt-12 w-11/12 mx-auto pt-4 relative pb-10 z-10'>
+              <h1 className='md:ml-24 pt-28 md:text-left text-center font-ron md:text-[2.5vw] text-[7vw] text-[#B57BFF]'
+                data-aos='fade-up' data-aos-delay='300' data-aos-duration='800'>
+                Featuring
+              </h1>
+              <div className='mx-auto w-[90vw] flex z-10'>
+                      <Image layout='responsive' src={pink_divider}/>
+              </div>
+              <div className='bg-[#596461] rounded-2xl mt-6 w-11/12 mx-auto pt-4 relative pb-10 z-10'>
                   <div className='absolute right-14 top-10'>
                     <Image src={red_dot}/>
                   </div>
