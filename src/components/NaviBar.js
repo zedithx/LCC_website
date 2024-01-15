@@ -11,7 +11,7 @@ export default function NaviBar() {
             <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
         </div>
         <button
-            className="absolute right-2 top-8 text-white cursor-pointer py-3 px-3 z-30"
+            className="absolute right-2 top-8 text-white cursor-pointer py-3 px-3 z-30 xl:scale-[1.5]"
             onClick={() => setNavState(!navState)}
           >
             {navState ? (

@@ -100,12 +100,12 @@ export default function Countdown() {
                   <div className='w-[80vw] mx-auto' data-aos='flip-up' data-aos-duration='800' data-aos-delay='300'>
                       <Image layout='responsive' src={bottom_left2}/>
                   </div>
-                   <div className='relative font-ron text-[#74F8FF] mx-auto lg:leading-5 md:leading-4 w-[80vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='300'>
+                   <div className='relative font-ron text-[#74F8FF] mx-auto md:leading-4 w-[80vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='300'>
                        <Image layout='responsive' src={top_left2}/>
-                       <h1 className='absolute -translate-x-1/2 left-1/2 top-4 text-[2.5vw] md:top-2 lg:top-4 w-[70vw]'>
-                          Free food, get a chance to win airpods pro, learn about many enriching programmes/activities your seniors experienced!
-                          <br></br><br></br>(to proceed press THE button)
-                       </h1>
+                       <h1 className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-[2.5vw] w-[70vw]'>
+                            Free food, get a chance to win airpods pro, learn about many enriching programmes/activities your seniors experienced!
+                            <br></br><br></br>(to proceed press THE button)
+                        </h1>
                   </div>
                   <div className='flex flex-row justify-around items-center'>
                       <div className='w-[30vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='300'>
@@ -144,7 +144,7 @@ export default function Countdown() {
                       <div className='relative font-ron text-[#74F8FF] mx-auto lg:leading-5 md:leading-4 sm:text-[0.8vw]
                       md:text-[0.9vw] lg:text-[1vw] w-[34vw]'>
                           <Image layout='responsive' src={top_left2}/>
-                          <h1 className='absolute -translate-x-1/2 left-1/2 lg:text-[1vw] text-[0.8vw] top-4 md:top-2 lg:top-4 w-[28vw]'>
+                          <h1 className='absolute -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2 lg:text-[1vw] text-[0.8vw] w-[28vw]'>
                               Free food, get a chance to win airpods pro, learn about many enriching programmes/activities your seniors experienced!
                               <br></br><br></br>(to proceed press THE button)
                           </h1>

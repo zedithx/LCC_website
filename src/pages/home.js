@@ -7,7 +7,6 @@ import {useEffect} from "react";
 
 import NaviBar from '../components/NaviBar'
 import home_background1 from '../../public/images/background/home_background1.png'
-import main_rocket from '../../public/images/rocket/rocket_arrow.png'
 import bloom2 from '../../public/images/background/bloom2.png'
 import bloom3 from '../../public/images/background/bloom3.png'
 import bloom4 from '../../public/images/background/bloom4.png'
@@ -47,7 +46,7 @@ export default function Home() {
             <NaviBar/>
           </section>
           {/*Countdown Alert For Luckydraw*/}
-          <section id='luckydraw-countdown' className= 'pl-6 md:pl-20 md:mt-28 mt-20'>
+          <section id='luckydraw-countdown' className= 'pl-6 md:pl-20 md:mt-28 lg:mt-36 mt-20'>
               <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
           </section>
           {/* Top Header */}
@@ -70,7 +69,7 @@ export default function Home() {
               </div>
               {/*Rocket*/}
               <div data-aos="fade-up" data-aos-offset='200' data-aos-delay='1500' data-aos-duration='800'>
-                <div id='rocket' className='lg:scale-[1.75] md:scale-125 sm:scale-100 scale-[.65] md:mt-48 mt-4'>
+                <div id='rocket' className='lg:scale-[1.75] xl:scale-[2.25] md:scale-125 sm:scale-100 scale-[.65] md:mt-48 2xl:mt-60 mt-4'>
                   <div className={styles.body}>
                     <div className={styles.top}>
                         <div className={styles.light}></div>
@@ -107,9 +106,6 @@ export default function Home() {
                         </div>
                 </div>
               </div>
-              {/*<div className='md:w-[50vw] w-[34vw] z-10 rounded-full' data-aos='fade-left' data-aos-delay='1700'>*/}
-              {/*    <Image alt='rocket' src={main_rocket}/>*/}
-              {/*</div>*/}
               <div className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 w-3/4'>
                  <Image alt='bloom2' src={bloom2}/>
               </div>
