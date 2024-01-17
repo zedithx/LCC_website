@@ -294,3 +294,531 @@ export const fifth_rows = [
         description: "Take the plunge and join SUTD Swimming! No background swimming experience is required. We’re all here to work towards becoming better swimmers and having fun! "
     },
 ]
+
+export const spring_internship = [
+    {
+        title: "AcePLP",
+        number: "A1",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "DP Architects Pte Ltd",
+        number: "A2",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "DS-Architects Pte Ltd",
+        number: "A3",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "HKS ASIA PACIFIC DESIGN CONSULTING PTE LTD",
+        number: "A4",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Pomeroy Studio",
+        number: "A5",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Spores Studio",
+        number: "A6",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Continental Automotive Singapore",
+        number: "A7",
+        description: "Automotive & Urban Transportation Systems",
+    },
+    {
+        title: "Continental Automotive Singapore",
+        number: "A8",
+        description: "Automotive & Urban Transportation Systems",
+    },
+    {
+        title: "Accenture",
+        number: "B1 ",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "Accenture",
+        number: "B2",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "EY",
+        number: "B3",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "Marshall Wace Singapore PTE. LTD.",
+        number: "B4",
+        description: "Banking & Finance",
+    },
+    {
+        title: "OCBC Bank",
+        number: "B5",
+        description: "Banking & Finance",
+    },
+    {
+        title: "DC Frontiers Pte Ltd (Handshakes)",
+        number: "B6",
+        description: "Fintech",
+    },
+    {
+        title: "Eezee Pte Ltd",
+        number: "B7",
+        description: "e-Commerce",
+    },
+    {
+        title: "PRISM Tech Pte Ltd",
+        number: "B8",
+        description: "Consumer Products (e.g digital gadgets/ household appliances)",
+    },
+    {
+        title: "Singapore Post",
+        number: "B9",
+        description: "Supply Chain, Logistics and Transportation",
+    },
+    {
+        title: "AMD",
+        number: "C1",
+        description: "Research & Development",
+    },
+    {
+        title: "A*STAR - Graduate Academy",
+        number: "C2",
+        description: "Research & Development",
+    },
+    {
+        title: "A*Star - Institute of Molecular and Cell Biology",
+        number: "C3",
+        description: "Research & Development",
+    },
+    {
+        title: "A*Star - INSTITUTE OF MICROELECTRONICS (IME)",
+        number: "C4",
+        description: "Research & Development",
+    },
+    {
+        title: "Defence Science and Technology Agency (DSTA)",
+        number: "C5",
+        description: "Defence Technology",
+    },
+    {
+        title: "DSO National Laboratories",
+        number: "C6",
+        description: "Defence Technology",
+    },
+    {
+        title: "Government Technology Agency of Singapore",
+        number: "C7",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "Infocomm Media Development Authority (IMDA)",
+        number: "C8",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "AGC Glass Europe",
+        number: "D1",
+        description: "Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Robert Bosch (SEA)",
+        number: "D2",
+        description: "Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Infineon Technologies Asia Pacific Pte Ltd",
+        number: "D3",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "Schneider Electric Singapore Pte Ltd",
+        number: "D4",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "Silicon Laboratories International",
+        number: "D5",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "Keysight Technologies",
+        number: "D6",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Rohde & Schwarz",
+        number: "D7",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Siemens Healthineers",
+        number: "D8",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "VFlowTech Pte Ltd",
+        number: "D9",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Weston Robot ",
+        number: "D10",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Kinexcs Pte Ltd",
+        number: "D11",
+        description: "Biomedical Engineering/ Medical Technology",
+    },
+    {
+        title: "Thermo Fisher Scientific",
+        number: "D12",
+        description: "Biomedical Engineering/ Medical Technology",
+    },
+    {
+        title: "PRIMECH A&P PTE LTD",
+        number: "D13",
+        description: "Environmental, Water & Waste Management",
+    },
+    {
+        title: "Accredify Pte Ltd",
+        number: "E1",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "ACP Computer Training & Consultancy",
+        number: "E2",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Alterface",
+        number: "E3",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Autodesk Asia Pte Ltd",
+        number: "E4",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Bifrost",
+        number: "E5",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "DeClout Ltd (GUUD)",
+        number: "E6",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Entiis",
+        number: "E7",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Envision Digital International Pte Ltd",
+        number: "E8",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Grab",
+        number: "E9",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Hewlett Packard",
+        number: "E10",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "HP Enterprise",
+        number: "E11",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Reluvate Technologies",
+        number: "E12",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Sharker Technology Pte Ltd",
+        number: "E13",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "TVS Digital Pte Ltd",
+        number: "E14",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "TikTok Pte. Ltd.",
+        number: "E15",
+        description: "Interactive Digital media",
+    }
+]
+
+export const summer_internship = [
+    {
+        title: "CPG Consultants Pte Ltd",
+        number: "A1",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "DP Architects Pte Ltd",
+        number: "A2",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "L+ W & PARTNERS PTE LTD",
+        number: "A3",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Mitsubishi Jisho Design Asia",
+        number: "A4",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Prose Architects",
+        number: "A5",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "Treasure Dragon Corporation",
+        number: "A6",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "WY-TO",
+        number: "A7",
+        description: "Architecture/ Design/ Urban Planning",
+    },
+    {
+        title: "DFS Venture Singapore (Pte) Lt",
+        number: "A8",
+        description: "Retail & Lifestyle (e.g. furniture / apparel)",
+    },
+    {
+        title: "Ground Transportation Systems Singapore Pte Ltd",
+        number: "A9",
+        description: "Automotive & Urban Transportation Systems",
+    },
+    {
+        title: "Building & Construction Authority (BCA)",
+        number: "B1",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "Land Transport Authority",
+        number: "B2",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "Singapore Sports Council",
+        number: "B3",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "The Republic of Singapore Air Force",
+        number: "B4",
+        description: "Government/Public Sector/Statutory Boards/Non-profit organisations",
+    },
+    {
+        title: "Changi Airport Group (Singapore) Pte Ltd",
+        number: "B5",
+        description: "Aviation & Aerospace Engineering",
+    },
+    {
+        title: "Collins Aerospace",
+        number: "B6",
+        description: "Aviation & Aerospace Engineering",
+    },
+    {
+        title: "GALAMAD AEROSPACE PTE. LTD.",
+        number: "B7",
+        description: "Aviation & Aerospace Engineering",
+    },
+    {
+        title: "Changi General Hospital",
+        number: "B8",
+        description: "Healthcare/Hospital",
+    },
+    {
+        title: "Singapore Health Services",
+        number: "B9",
+        description: "Healthcare/Hospital",
+    },
+    {
+        title: "Neurowyzr",
+        number: "B10",
+        description: "Biomedical Engineering/ Medical Technology",
+    },
+    {
+        title: "PreciX Pte Ltd",
+        number: "B11",
+        description: "Biomedical Engineering/ Medical Technology",
+    },
+    {
+        title: "Vivo Surgical Pte Ltd",
+        number: "B12",
+        description: "Biomedical Engineering/ Medical Technology",
+    },
+    {
+        title: "A*STAR - SIMTech",
+        number: "B13",
+        description: "Research & Development",
+    },
+    {
+        title: "DSO National Laboratories",
+        number: "B14",
+        description: "Defence Technology",
+    },
+    {
+        title: "DBS Bank Ltd",
+        number: "C1",
+        description: "Banking & Finance",
+    },
+    {
+        title: "GIC",
+        number: "C2",
+        description: "Banking & Finance",
+    },
+    {
+        title: "Marvell Asia Pte Ltd",
+        number: "C3",
+        description: "Banking & Finance",
+    },
+    {
+        title: "Singapore Exchange (SGX)",
+        number: "C4",
+        description: "Banking & Finance",
+    },
+    {
+        title: "Wells Fargo & Company",
+        number: "C5",
+        description: "Banking & Finance",
+    },
+    {
+        title: "Accenture",
+        number: "C6",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "Accenture",
+        number: "C7",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "Accenture",
+        number: "C8 ",
+        description: "Consulting & Professional Services",
+    },
+    {
+        title: "DC Frontiers Pte Ltd",
+        number: "C9",
+        description: "Fintech",
+    },
+    {
+        title: "DC Frontiers Pte Ltd",
+        number: "C10",
+        description: "Fintech",
+    },
+    {
+        title: "Ascott",
+        number: "C11",
+        description: "Real Estate & Property Development",
+    },
+    {
+        title: "Allied Container (E&M) PTE LTD",
+        number: "C12",
+        description: "Supply Chain, Logistics and Transportation",
+    },
+    {
+        title: "ASM Pacific Technology Limited (ASMPT)",
+        number: "D1",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "Infineon Technologies Asia Pacific Pte Ltd",
+        number: "D2",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "STMicroelectronics Asia Pacific Pte. Ltd",
+        number: "D3",
+        description: "Electronics & Semiconductor",
+    },
+    {
+        title: "Sembcorp Industries",
+        number: "D4",
+        description: "Energy",
+    },
+    {
+        title: "Sembcorp Industries",
+        number: "D5",
+        description: "Energy",
+    },
+    {
+        title: "BAUMANN Spring Co. (S) Pte. Ltd.",
+        number: "D6",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Honeywell",
+        number: "D7",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Yokogawa Engineering Asia Pte. Ltd.",
+        number: "D8",
+        description: "Engineering/ Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Carbon Disclosure Project (Singapore) Limited",
+        number: "D9",
+        description: "Environmental, Water & Waste Management",
+    },
+    {
+        title: "Gunvor Singapore Pte. Ltd.",
+        number: "D10",
+        description: "Oil and Gas",
+    },
+    {
+        title: "Seagate Singapore International Headquarters",
+        number: "D11",
+        description: "Manufacturing/ Machinery & Equipment",
+    },
+    {
+        title: "Fujifilm Business Innovation Singapore",
+        number: "E1",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "Murex Southeast Pte Ltd",
+        number: "E2",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "NCS",
+        number: "E3",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "NCS",
+        number: "E4",
+        description: "Information Technology - Products and Services",
+    },
+    {
+        title: "S & I Systems Pte Ltd",
+        number: "E5",
+        description: "Information Technology - Products and Services",
+    },
+]
+
+

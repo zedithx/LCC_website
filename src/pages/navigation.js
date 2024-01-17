@@ -8,8 +8,8 @@ import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import bloom5 from "../../public/images/background/bloom5.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
-import {fifth_rows, urop, overseas_opp} from "@/static/booth"
-import general_map from "../../public/images/LCCImages/general_map.jpg"
+import {fifth_rows, urop, overseas_opp, spring_internship, summer_internship} from "@/static/booth"
+import general_level1 from "../../public/images/maps/general_level1.jpg"
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 
@@ -54,7 +54,7 @@ export default function Navigation() {
                   <h1 className='pl-8 pt-10 font-ron text-[5vw] text-[#B57BFF] relative z-20'>Navigation</h1>
               {/*    Insert Image of map here: carousel*/}
                   <div className='pl-8 w-9/12 z-20 relative'>
-                      <Image src={general_map}/>
+                      <Image src={general_level1}/>
                   </div>
                   <h1 className='w-10/12 mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
                       Numbers on the map indicates booth number correlated to the number on each card below
@@ -62,12 +62,14 @@ export default function Navigation() {
               </section>
               <section id='directory' className='pt-10 pb-8'>
               {/*    Accordion UROP*/}
-                  <Accordion title="Undergraduate Research Opportunities Programme (1-4)" booth={urop}/>
+                  <Accordion title="Undergraduate Research Opportunities Programme (U1-U4)" booth={urop}/>
               {/*    Accordion overseas Op*/}
-                  <Accordion title="Overseas Opportunities (5-29)" booth={overseas_opp}/>
+                  <Accordion title="Overseas Opportunities (O1-O25)" booth={overseas_opp}/>
               {/*    Accordion Fifth Row*/}
-                  <Accordion title="Fifth Row (30-40)" booth={fifth_rows}/>
-              {/*    Accordion Food Booths*/}
+                  <Accordion title="Fifth Row (F1-F11)" booth={fifth_rows}/>
+              {/*    Accordion Internships*/}
+                  <Accordion title="Spring Internship @ 2-4 (Level 2)" booth={spring_internship} />
+                  <Accordion title="Summer Internship @ 4-6 (Level 2)" booth={summer_internship} />
               </section>
             </div>
       </>

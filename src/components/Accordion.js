@@ -32,14 +32,46 @@ export default function Accordion(props){
             ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`} style={transitionStyles[accordionOpen ? 'entered' : 'exited']}>
             {accordionOpen &&
             booths.map((booth) => {
+                const getInternshipClass = () => {
+                  switch (booth.number[0]) {
+                    case 'A':
+                      return 'bg-[#ffde59]';
+                    case 'B':
+                      return 'bg-[#00bf63]';
+                    case 'C':
+                      return 'bg-[#5ce1e6]';
+                    case 'D':
+                      return 'bg-[#C0C0C0]';
+                    case 'E':
+                      return 'bg-[#ff914d]';
+                    default:
+                      return 'bg-[#420059]';
+                  }
+                };
+                const getInternshipClassText = () => {
+                  switch (booth.number[0]) {
+                    case 'A':
+                      return 'text-[#597AFF]';
+                    case 'B':
+                      return 'text-[#BF005C]';
+                    case 'C':
+                      return 'text-[#E6615C]';
+                    case 'D':
+                      return 'text-black';
+                    case 'E':
+                      return 'text-[#4DFFD8]';
+                    default:
+                      return 'text-[#D587FA]';
+                  }
+                };
                 return(
                     <>
-                        <div className='bg-[#420059] border-4 px-4 pt-4 mx-auto md:mx-0 pb-10 border-gray-600 md:w-5/12 w-11/12'>
-                            {/*Put Image instead of pink square here*/}
+                        <div className={`border-4 px-4 pt-4 mx-auto md:mx-0 pb-10 border-gray-600 md:w-5/12 w-11/12
+                        ${getInternshipClass()}`}>
+                            {booth.poster && (
                             <Image layout='responsive' loading='lazy' src={booth.poster}/>
-                            {/*<div className='bg-[#D587FA] h-40'>*/}
-                            {/*</div>*/}
-                            <div className='font-gotham text-[#D587FA] pt-2 md:text-[1.8vw] text-[5vw]'>
+                            )}
+                            <div className={`font-gotham pt-2 md:text-[1.8vw] text-[5vw] ${getInternshipClassText()}`}>
                                 <h1>{booth.number}</h1>
                                 <h1>{booth.title}</h1>
                             </div>
