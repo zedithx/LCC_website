@@ -28,7 +28,7 @@ const ImageWithSpinner = ({ src, alt }) => {
 
 const Spinner = () => {
   return (
-  <div className={styles.loader}>
+  <div className={`${styles.loader} top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 `}>
       <span className={styles.loader_text}>Loading</span>
       <span className={styles.load}></span>
   </div>
