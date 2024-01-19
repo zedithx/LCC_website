@@ -17,7 +17,7 @@ const ImageWithSpinner = ({ src, alt }) => {
         alt={alt}
         onLoad={handleImageLoad} // Set loading to false once the image is loaded
         style={{
-          display: isLoading ? 'none' : 'block',
+          display: isLoading ? 'invisible' : 'block',
           width: '100%', // Adjust the width as needed
           height: 'auto', // Maintain aspect ratio
         }}
