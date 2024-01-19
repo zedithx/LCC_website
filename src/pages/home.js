@@ -81,7 +81,7 @@ export default function Home() {
                     <div className={styles.reflection}></div>
                     </div>
                       <div className={styles.flag}>
-                        <img src="https://i.postimg.cc/02tkCh3m/1682594977157.png" width="20" height="20" alt="" />
+                        <img src="https://i.postimg.cc/02tkCh3m/1682594977157.png" width="20" height="20" alt="nil" />
                         </div>
                           <div className={`${styles.boster} ${styles.bosterL}`}>
                             <p> Universe  </p>
