@@ -77,7 +77,7 @@ export default function Accordion(props){
                 return(
                     <>
                         <div className={`border-4 px-4 pt-4 mx-auto md:mx-0 pb-10 border-gray-600 md:w-5/12 w-11/12
-                        ${getInternshipClass()}`}>
+                        ${getInternshipClass()}`} data-aos='fade-up' data-aos-duration='500'>
                             {booth.poster && (
                             <Image layout='responsive' loading='lazy' src={booth.poster}/>
                             )}
