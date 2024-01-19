@@ -37,7 +37,7 @@ export const CountdownTimer = ({ targetDate }) => {
                     {minutes_string[0]}{minutes_string[1]}: <h1 className='font-gotham text-[2.5vw] md:text-[1.2vw]'>Minutes</h1>
                 </td>
                 <td className='inline-block' data-aos='zoom-in' data-aos-delay='1900' data-aos-offset="50px">
-                    {seconds_string[0]}{seconds_string[1]}: <h1 className='font-gotham text-[2.5vw] md:text-[1.2vw]'>Seconds</h1>
+                    {seconds_string[0]}{seconds_string[1]} <h1 className='font-gotham text-[2.5vw] md:text-[1.2vw]'>Seconds</h1>
                 </td>
             </tr>
             </tbody>

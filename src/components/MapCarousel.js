@@ -1,7 +1,9 @@
 import {Component} from "react";
 import Image from "next/image";
 import general_level1 from "../../public/images/maps/level1/level1_general.png"
-import level1_overseas_block from "../../public/images/maps/level1/level1_overseas_block.png"
+import level1_overseas_block from "../../public/images/maps/level1/blocks/level1_overseas_block.png"
+import level1_fifthrow_block from "../../public/images/maps/level1/blocks/level1_fifthrow_block.png"
+import level1_urop_block from "../../public/images/maps/level1/blocks/level1_urop_block.png"
 import level1_fifthrow from "../../public/images/maps/level1/level1_fifthrow.png"
 import level1_urop from "../../public/images/maps/level1/level1_urop.png"
 import level1_overseas from "../../public/images/maps/level1/level1_overseas.png"
@@ -11,6 +13,11 @@ import level2_spring_gray from "../../public/images/maps/level2/spring/level2_sp
 import level2_spring_green from "../../public/images/maps/level2/spring/level2_spring_green.png"
 import level2_spring_orange from "../../public/images/maps/level2/spring/level2_spring_orange.png"
 import level2_spring_yellow from "../../public/images/maps/level2/spring/level2_spring_yellow.png"
+import level2_spring_blue_block from "../../public/images/maps/level2/spring/blocks/level2_spring_blue_block.png"
+import level2_spring_gray_block from "../../public/images/maps/level2/spring/blocks/level2_spring_gray_block.png"
+import level2_spring_green_block from "../../public/images/maps/level2/spring/blocks/level2_spring_green_block.png"
+import level2_spring_orange_block from "../../public/images/maps/level2/spring/blocks/level2_spring_orange_block.png"
+import level2_spring_yellow_block from "../../public/images/maps/level2/spring/blocks/level2_spring_yellow_block.png"
 import level2_summer from "../../public/images/maps/level2/summer/lvl2_summer.png"
 import level2_summer_blue from "../../public/images/maps/level2/summer/lvl2_summer_blue.png"
 import level2_summer_gray from "../../public/images/maps/level2/summer/lvl2_summer_gray.png"
@@ -18,6 +25,12 @@ import level2_summer_green from "../../public/images/maps/level2/summer/lvl2_sum
 import level2_summer_greentop from "../../public/images/maps/level2/summer/lvl2_summer_greentop.png"
 import level2_summer_orange from "../../public/images/maps/level2/summer/lvl2_summer_orange.png"
 import level2_summer_yellow from "../../public/images/maps/level2/summer/lvl2_summer_yellow.png"
+import level2_summer_blue_block from "../../public/images/maps/level2/summer/blocks/level2_summer_blue_block.png"
+import level2_summer_gray_block from "../../public/images/maps/level2/summer/blocks/level2_summer_gray_block.png"
+import level2_summer_green_block from "../../public/images/maps/level2/summer/blocks/level2_summer_green_block.png"
+import level2_summer_greentop_block from "../../public/images/maps/level2/summer/blocks/level2_summer_greentop_block.png"
+import level2_summer_orange_block from "../../public/images/maps/level2/summer/blocks/level2_summer_orange_block.png"
+import level2_summer_yellow_block from "../../public/images/maps/level2/summer/blocks/level2_summer_yellow_block.png"
 
 
 import {Link} from "react-scroll";
@@ -101,6 +114,18 @@ export default class MapCarousel extends Component {
                                     <Image src={level1_overseas_block}/>
                                 </Link>
                             </div>
+                            <div className='absolute top-[14%] left-[29%] w-2/12 hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(1)
+                          }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level1_fifthrow_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[29%] left-[22%] w-[13%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(2)
+                          }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level1_urop_block}/>
+                                </Link>
+                            </div>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 1) ? (
@@ -118,15 +143,45 @@ export default class MapCarousel extends Component {
                             <Image src={slideImages[3]}/>
                         </div>
                     ):null}
-                    {/*Level 1 Spring*/}
+                    {/*Level 2 Spring*/}
                     {(this.state.currentSlide === 4) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[4]}/>
+                            <div className='absolute bottom-[5%] left-[24%] w-4/12 hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(9)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_spring_yellow_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[10%] left-[28%] w-5/12 hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(8)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_spring_orange_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute bottom-[15%] left-[28%] w-[44%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(7)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_spring_green_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[34%] right-[12%] w-[38%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(6)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_spring_gray_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[34%] left-[16%] w-[38%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(5)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_spring_blue_block}/>
+                                </Link>
+                            </div>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 5) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
-                            <Image src={slideImages[5]}/>
+                            <Image src={slideImages[5]} alt='slide 5'/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 6) ? (
@@ -153,6 +208,42 @@ export default class MapCarousel extends Component {
                     {(this.state.currentSlide === 10) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[10]}/>
+                            <div className='absolute top-[33%] right-[18%] w-[40%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(11)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_blue_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[10%] right-[30%] w-[25%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(12)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_gray_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute bottom-[15%] right-[29%] w-[44%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(13)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_green_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[30%] left-[20%] w-[23%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(14)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_greentop_block}/>
+                                </Link>
+                            </div>
+                            <div className='absolute top-[12%] left-[22%] w-[22%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(15)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_orange_block}/>
+                                </Link>
+                            </div>
+                             <div className='absolute bottom-[5%] left-[24%] w-[32%] hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(16)
+                                }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level2_summer_yellow_block}/>
+                                </Link>
+                            </div>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 11) ? (
@@ -222,7 +313,7 @@ export default class MapCarousel extends Component {
                               }} smooth={true} style={{cursor: 'pointer', fontSize: 40}}/>
                     </nav>
                 </div>
-                <h1 className='font-ron text-center mx-auto text-white md:text-[2.5vw] text-[3.5vw] md:w-2/3 7/12'>Click on the coloured blocks to get a more detailed view!</h1>
+                <h1 className='font-ron text-center mx-auto text-white md:text-[2.5vw] text-[3.5vw] md:w-2/3 7/12'>Click on the coloured blocks to get a more detailed view of the layout!</h1>
             </div>
 
             </>

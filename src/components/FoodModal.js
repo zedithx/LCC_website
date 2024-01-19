@@ -68,9 +68,10 @@ export default function FoodModal(props) {
     }
     return (
         <>
-        <a className='hover:cursor-pointer border-8 border-[#757575] hover:bg-[#5FFF6F]
-        drop-shadow-md bg-[#E63B3B] py-3 px-8 absolute top-1/2 left-1/2
-        -translate-x-1/2 -translate-y-1/2' onClick={handleOpen}>Food</a>
+        <div className='flex items-center hover:cursor-pointer border-8 border-[#757575] hover:bg-[#5FFF6F]
+            drop-shadow-md bg-[#E63B3B] py-3 px-8' onClick={handleOpen}>
+            <a className='mt-1'>Food</a>
+        </div>
         <Modal
           open={open}
           onClose={handleClose}

@@ -183,18 +183,14 @@ export default function Home() {
                               <br></br>
                               <h1 className='font-bold'>Food Stamps</h1>
                               <h1 className='text-white'>
-                                  Simply collect your food stamps and redeem your ice-cream and churros!
+                                  Simply collect your food stamps and redeem your churros, ice-cream and popcorn!
                               </h1>
                            </div>
                         </div>
-                      <div className='flex flex-row justify-around md:pt-20 pt-12 font-gotham-light text-black md:text-[1vw] text-[3vw] font-bold'>
+                      <div className='flex flex-row justify-around md:pt-8 lg:pt-12 sm:pt-12 pt-14 pb-4 font-gotham-light text-black md:text-[1vw] text-[3vw] font-bold'>
                         {/* Modals */}
-                        <div className='relative'>
-                            <LuckyDrawModal/>
-                        </div>
-                        <div className='relative'>
-                            <FoodModal/>
-                        </div>
+                        <LuckyDrawModal/>
+                        <FoodModal/>
                   </div>
                   </div>
               </div>
