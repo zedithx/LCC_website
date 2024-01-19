@@ -9,7 +9,7 @@ import bloom5 from "../../public/images/background/bloom5.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
 import {fifth_rows, urop, overseas_opp, spring_internship, summer_internship} from "@/static/booth"
-import general_level1 from "../../public/images/maps/general_level1.png"
+import general_level1 from "../../public/images/maps/level1/level1_general.png"
 import MapCarousel from "@/components/MapCarousel";
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
