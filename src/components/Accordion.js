@@ -35,14 +35,19 @@ export default function Accordion(props){
                 const getInternshipClass = () => {
                   switch (booth.number[0]) {
                     case 'A':
+                        case 'F':
                       return 'bg-[#ffde59]';
                     case 'B':
+                      case 'G':
                       return 'bg-[#00bf63]';
                     case 'C':
+                      case 'H':
                       return 'bg-[#5ce1e6]';
                     case 'D':
+                      case 'I':
                       return 'bg-[#C0C0C0]';
                     case 'E':
+                      case 'J':
                       return 'bg-[#ff914d]';
                     default:
                       return 'bg-[#420059]';
@@ -51,14 +56,19 @@ export default function Accordion(props){
                 const getInternshipClassText = () => {
                   switch (booth.number[0]) {
                     case 'A':
+                      case 'F':
                       return 'text-[#597AFF]';
                     case 'B':
+                      case 'G':
                       return 'text-[#BF005C]';
                     case 'C':
+                      case 'H':
                       return 'text-[#E6615C]';
                     case 'D':
+                      case 'I':
                       return 'text-black';
                     case 'E':
+                      case 'J':
                       return 'text-[#4DFFD8]';
                     default:
                       return 'text-[#D587FA]';

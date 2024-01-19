@@ -28,13 +28,17 @@ export default function Navigation() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-          <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full'>
+          <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full overflow-hidden'>
               <div className='absolute left-1/2 -translate-x-1/2 w-full z-10'>
                   <Image layout='responsive' src={home_background1}/>
               </div>
               {/* Navibar + logo */}
               <section id='top bar' className='relative'>
                 <NaviBar/>
+              </section>
+              {/*Countdown Alert For Luckydraw*/}
+              <section id='luckydraw-countdown' className= 'pl-6 md:pl-20 md:mt-28 lg:mt-36 mt-20'>
+                <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
               </section>
               {/*Background bloom*/}
               <section id='background-bloom'>
@@ -44,10 +48,6 @@ export default function Navigation() {
                   <div className='absolute right-0 w-2/3'>
                     <Image layout='responsive' src={bloom5}/>
                   </div>
-              </section>
-              {/*Countdown Alert For Luckydraw*/}
-              <section id='luckydraw-countdown' className= 'pl-8 pt-32'>
-                  <LuckyDrawTimer targetTime={LUCKYDRAW_TIMING} suppressHydrationWarning={true}/>
               </section>
               <div className='absolute left-1/2 top-2/3 -translate-x-1/2 w-full'>
                 <Image layout='responsive' src={home_background1}/>
