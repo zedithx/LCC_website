@@ -41,23 +41,23 @@ export default class MapCarousel extends Component {
     }
 
     nextSlide = () => {
-        let slidesIndex = [0, 4, 10]
-        const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
-        let newSlide =
-            this.state.currentSlide === slidesIndex[2]
-                ? 0
-                : this.state.currentSlide = slidesIndex[currentIndexInArray + 1];
-        this.setState({currentSlide: newSlide});
+      let slidesIndex = [0, 4, 10]
+      const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
+      let newSlide =
+        this.state.currentSlide === slidesIndex[2]
+          ? 0
+          : slidesIndex[currentIndexInArray + 1];
+      this.setState({ currentSlide: newSlide });
     };
 
     prevSlide = () => {
-        let slidesIndex = [0, 4, 10]
-        const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
-        let newSlide =
-            this.state.currentSlide === 0
-                ? 10
-                : this.state.currentSlide = slidesIndex[currentIndexInArray - 1];
-        this.setState({currentSlide: newSlide});
+      let slidesIndex = [0, 4, 10]
+      const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
+      let newSlide =
+        this.state.currentSlide === 0
+          ? 10
+          : slidesIndex[currentIndexInArray - 1];
+      this.setState({ currentSlide: newSlide });
     };
 
     setCurrentSlide = (index) => {
