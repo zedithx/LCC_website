@@ -102,7 +102,7 @@ export default class MapCarousel extends Component {
         return (
             <>
             <div className='bg-[#596461] rounded-2xl w-11/12 relative pb-8 z-20 mx-auto'>
-                <div className='flex md:flex-row flex-col py-8 mx-8 md:gap-8 gap-4'>
+                <div className='flex md:flex-row flex-col py-8 md:mx-8 mx-1 md:gap-8 gap-4'>
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
