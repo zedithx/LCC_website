@@ -2,6 +2,7 @@ import {Component, useState} from "react";
 import Image from "next/image";
 import rocket from '../../public/images/rocket/rocket_arrow.png'
 import { Link } from "react-scroll"
+import ImageWithSpinner from "@/components/ImageWithSpinner";
 
 const transitionStyles = {
   entering: { opacity: 0, maxHeight: 0 },
@@ -35,19 +36,14 @@ export default function Accordion(props){
                 const getInternshipClass = () => {
                   switch (booth.number[0]) {
                     case 'A':
-                        case 'F':
                       return 'bg-[#ffde59]';
                     case 'B':
-                      case 'G':
                       return 'bg-[#00bf63]';
                     case 'C':
-                      case 'H':
                       return 'bg-[#5ce1e6]';
                     case 'D':
-                      case 'I':
                       return 'bg-[#C0C0C0]';
                     case 'E':
-                      case 'J':
                       return 'bg-[#ff914d]';
                     default:
                       return 'bg-[#420059]';
@@ -56,19 +52,14 @@ export default function Accordion(props){
                 const getInternshipClassText = () => {
                   switch (booth.number[0]) {
                     case 'A':
-                      case 'F':
                       return 'text-[#597AFF]';
                     case 'B':
-                      case 'G':
                       return 'text-[#BF005C]';
                     case 'C':
-                      case 'H':
                       return 'text-[#E6615C]';
                     case 'D':
-                      case 'I':
                       return 'text-black';
                     case 'E':
-                      case 'J':
                       return 'text-[#4DFFD8]';
                     default:
                       return 'text-[#D587FA]';
@@ -79,7 +70,7 @@ export default function Accordion(props){
                         <div className={`border-4 px-4 pt-4 mx-auto md:mx-0 pb-10 border-gray-600 md:w-5/12 w-11/12
                         ${getInternshipClass()}`} data-aos='fade-up' data-aos-duration='500'>
                             {booth.poster && (
-                            <Image layout='responsive' loading='lazy' src={booth.poster}/>
+                            <ImageWithSpinner layout='responsive' loading='lazy' src={booth.poster}/>
                             )}
                             <div className={`font-gotham pt-2 md:text-[1.8vw] text-[5vw] ${getInternshipClassText()}`}>
                                 <h1>{booth.number}</h1>

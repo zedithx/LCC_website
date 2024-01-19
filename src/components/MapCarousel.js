@@ -37,6 +37,7 @@ import level2_summer_yellow_block from "../../public/images/maps/level2/summer/b
 import {Link} from "react-scroll";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ImageWithSpinner from "@/components/ImageWithSpinner";
 const handleDynamicChanges = () => {
     // Code for dynamically adding or modifying elements
 
@@ -107,7 +108,7 @@ export default class MapCarousel extends Component {
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
-                             data-aos-duration='800' data-aos-delay='500'>
+                             data-aos-duration='800'>
                             <Image src={slideImages[0]}/>
                             <div className='absolute top-[18%] left-[35%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(3)
@@ -131,7 +132,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 1) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[1]} alt='slide 1'/>
+                            <ImageWithSpinner src={slideImages[1]} alt='slide 1'/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -156,7 +157,7 @@ export default class MapCarousel extends Component {
                     {/*Level 2 Spring*/}
                     {(this.state.currentSlide === 4) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
-                             data-aos-duration='800' data-aos-delay='500'>
+                             data-aos-duration='800'>
                             <Image src={slideImages[4]}/>
                             <div className='absolute bottom-[5%] left-[24%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(9)
@@ -233,7 +234,7 @@ export default class MapCarousel extends Component {
                     {/*Level 2 Summer*/}
                     {(this.state.currentSlide === 10) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative'
-                             data-aos={'flip-up'} data-aos-duration='800' data-aos-delay='500'>
+                             data-aos={'flip-up'} data-aos-duration='800'>
                             <Image src={slideImages[10]}/>
                             <div className='absolute top-[33%] right-[18%] w-[40%] hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(11)
