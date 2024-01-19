@@ -106,7 +106,7 @@ export default class MapCarousel extends Component {
                 <div className='flex md:flex-row flex-col py-8 md:mx-8 mx-1 md:gap-8 gap-4'>
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
                             <Image src={slideImages[0]}/>
                             <div className='absolute top-[18%] left-[35%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(3)
@@ -129,32 +129,32 @@ export default class MapCarousel extends Component {
                         </div>
                     ):null}
                     {(this.state.currentSlide === 1) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[1]} alt='slide 1'/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 2) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[2]} alt='slide 2'/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 3) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[3]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {/*Level 2 Spring*/}
                     {(this.state.currentSlide === 4) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
                             <Image src={slideImages[4]}/>
                             <div className='absolute bottom-[5%] left-[24%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(9)
@@ -189,48 +189,48 @@ export default class MapCarousel extends Component {
                         </div>
                     ):null}
                     {(this.state.currentSlide === 5) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[5]} alt='slide 5'/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 6) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[6]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 7) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[7]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 8) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[8]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 9) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[9]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {/*Level 2 Summer*/}
                     {(this.state.currentSlide === 10) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
                             <Image src={slideImages[10]}/>
                             <div className='absolute top-[33%] right-[18%] w-[40%] hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(11)
@@ -271,49 +271,49 @@ export default class MapCarousel extends Component {
                         </div>
                     ):null}
                     {(this.state.currentSlide === 11) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[11]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 12) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[12]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 13) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[13]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 14) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[14]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 15) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
                             <Image src={slideImages[15]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 16) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'} data-aos-duration='500'>
                             <Image src={slideImages[16]}/>
-                            <ExitToAppIcon className='absolute text-white top-[1%] right-[1%] hover:scale-[1.10]'
+                            <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.1]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
                         </div>
@@ -329,7 +329,7 @@ export default class MapCarousel extends Component {
                     drop-shadow-md py-3 px-12 text-center font-gotham text-[1.1vw]
                     ${index.includes(this.state.currentSlide) ? 'bg-[#680000] text-white' : 'bg-[#E63B3B]'}`}
                           onClick={() => {this.setCurrentSlide(index[0]);
-                          }} smooth={true} style={{cursor: 'pointer'}}>{title}</Link>
+                          }} smooth={true} style={{cursor: 'pointer'}} data-aos='fade-left' data-aos-duration='500'>{title}</Link>
                   ))}
 
                     </div>
@@ -348,7 +348,7 @@ export default class MapCarousel extends Component {
                          ${index.includes(this.state.currentSlide) ? '' : 'hidden'}`}
                               onClick={() => {
                                 this.setCurrentSlide(index[0]);
-                              }} smooth={true} style={{cursor: 'pointer'}}>{title}</Link>
+                              }} smooth={true} style={{cursor: 'pointer'}} data-aos='fade-left' data-aos-duration='500'>{title}</Link>
                          ))}
                          <ArrowForwardIosIcon className='text-white self-center' onClick={() => {
                                 this.nextSlide();
