@@ -34,7 +34,7 @@ export default function Home() {
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
             <title>LCC2023</title>
-            <link rel="icon" href="../../public/favicon.ico" />
+            <link rel="icon" href="../../public/images/logo/lcc_logo.jpg" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
       <div className='bg-[#1D1C20] bg-cover -z-20 h-auto w-full overflow-hidden'>
