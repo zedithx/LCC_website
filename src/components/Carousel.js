@@ -64,7 +64,7 @@ export default class Carousel extends Component {
                             </h1>
                             <div className='flex md:flex-row flex-col-reverse items-center mx-auto mt-4 gap-6 md:gap-10'>
                                 <h1 className='font-gotham-light text-white md:text-[1.2vw] text-[4vw] md:w-6/12 w-10/12 text-left'>
-                                    In this undergraduate research program, students analyze air cargo demand for Southeast Asia, utilizing IATA’s CargoIS and macroeconomic datasets. They engage in data analysis, econometric testing, and visualizations using R and Python, examining trade policies and economic factors in ASEAN countries. This program offers a comprehensive research experience, ideal for students keen on exploring complex economic trends and their impact on regional trade dynamics.
+                                    In this undergraduate research program, students analyze air cargo demand for Southeast Asia, utilizing IATA&apos;s CargoIS and macroeconomic datasets. They engage in data analysis, econometric testing, and visualizations using R and Python, examining trade policies and economic factors in ASEAN countries. This program offers a comprehensive research experience, ideal for students keen on exploring complex economic trends and their impact on regional trade dynamics.
                                 </h1>
                                 <div className='md:w-4/12 w-11/12'>
                                     <Image src={asi} layout='responsive'/>
@@ -84,7 +84,7 @@ export default class Carousel extends Component {
                             </h1>
                             <div className='flex md:flex-row flex-col-reverse items-center mx-auto mt-4 md:gap-10 gap-6'>
                                 <h1 className='font-gotham-light text-white md:text-[1.5vw] text-[4vw] md:w-6/12 w-10/12 text-left md:mt-10'>
-                                    Embark on an exhilarating journey at UC Berkeley's Global Experience, where you'll delve into environmental science, game theory, and neurodiversity. Capture life through digital photography, explore nature's wonders, and immerse yourself in the vibrant culture and history of San Francisco, all while embracing the dynamic Berkeley lifestyle.
+                                    Embark on an exhilarating journey at UC Berkeley&apos;s Global Experience, where you'll delve into environmental science, game theory, and neurodiversity. Capture life through digital photography, explore nature's wonders, and immerse yourself in the vibrant culture and history of San Francisco, all while embracing the dynamic Berkeley lifestyle.
                                 </h1>
                                 <div className='md:w-4/12 w-8/12'>
                                     <Image src={overseas_feature} layout='responsive'/>
@@ -103,7 +103,11 @@ export default class Carousel extends Component {
                             </h1>
                             <div className='flex md:flex-row flex-col-reverse items-center mx-auto mt-6 md:gap-10 gap-6'>
                                 <h1 className='font-gotham-light text-white md:text-[1.4vw] text-[4vw] md:w-7/12 w-10/12 text-left'>
-                                    Join the thrill of space exploration with SEDS-SUTD! This student club is your gateway to rocketry, where you'll design and build rockets like the Mynah-1. Embrace the challenge of Project Sunbird, pushing the boundaries of aerospace engineering. It's a hub for space enthusiasts to innovate, collaborate, and dream big about rockets, satellites, and beyond. Get ready to ignite your passion for the stars and be a part of shaping the future of space technology!
+                                    Join the thrill of space exploration with SEDS-SUTD! This student club is your gateway to rocketry,
+                                    where you'll design and build rockets like the Mynah-1. Embrace the challenge of Project Sunbird,
+                                    pushing the boundaries of aerospace engineering. It&apos;s a hub for space enthusiasts to innovate,
+                                    collaborate, and dream big about rockets, satellites, and beyond. Get ready to ignite your passion for
+                                    the stars and be a part of shaping the future of space technology!
                                 </h1>
                                 <div className='md:w-3/12 w-8/12'>
                                     <Image src={fifthrow_feature} layout='responsive'/>

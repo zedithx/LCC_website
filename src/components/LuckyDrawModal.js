@@ -90,7 +90,7 @@ export default function LuckyDrawModal(props) {
                       <h1 className='text-white'>
                           1. Go to any booth and scan the QR code in the booth.
                           <br></br>
-                          2. Input in the Booth Number to indicate best booth! Voila, you're now in the contest!!
+                          2. Input in the Booth Number to indicate best booth! Voila, you&apos;re now in the contest!!
                       </h1>
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
@@ -120,7 +120,7 @@ export default function LuckyDrawModal(props) {
                       <h1 className='text-white'>
                           1. Go to any booth and scan the QR code in the booth.
                           <br></br>
-                          2. Input in the Booth Number to indicate best booth! Voila, you're now in the contest!!
+                          2. Input in the Booth Number to indicate best booth! Voila, you&apos;re now in the contest!!
                       </h1>
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
