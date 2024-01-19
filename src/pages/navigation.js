@@ -6,6 +6,7 @@ import home_background1 from "../../public/images/background/home_background1.pn
 import NaviBar from "@/components/NaviBar";
 import {LuckyDrawTimer} from "@/components/LuckyDrawTimer";
 import bloom5 from "../../public/images/background/bloom5.png"
+import bloom3 from "../../public/images/background/bloom3.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
 import {fifth_rows, urop, overseas_opp, spring_internship, summer_internship} from "@/static/booth"
@@ -51,15 +52,18 @@ export default function Navigation() {
               <div className='absolute left-1/2 top-2/3 -translate-x-1/2 w-full'>
                 <Image layout='responsive' src={home_background1}/>
               </div>
+               <div className='absolute top-2/3 w-2/3'>
+                    <Image layout='responsive' src={bloom3}/>
+                  </div>
               <section id='navigation-map'>
                   <h1 className='pl-8 pt-10 font-ron text-[5vw] text-[#B57BFF] relative z-20'>Navigation</h1>
               {/*    Insert Image of map here: carousel*/}
                   <MapCarousel/>
-                  <h1 className='w-10/12 mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
+                  <h1 className='w-10/12 z-20 relative mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
               </section>
-              <section id='directory' className='pt-10 pb-8'>
+              <section id='directory' className='pt-10 pb-8 z-20 relative'>
               {/*    Accordion UROP*/}
                   <Accordion title="Undergraduate Research Opportunities Programme (U1-U4)" booth={urop}/>
               {/*    Accordion overseas Op*/}

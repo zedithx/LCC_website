@@ -1,6 +1,7 @@
 import {Component} from "react";
 import Image from "next/image";
 import general_level1 from "../../public/images/maps/level1/level1_general.png"
+import level1_overseas_block from "../../public/images/maps/level1/level1_overseas_block.png"
 import level1_fifthrow from "../../public/images/maps/level1/level1_fifthrow.png"
 import level1_urop from "../../public/images/maps/level1/level1_urop.png"
 import level1_overseas from "../../public/images/maps/level1/level1_overseas.png"
@@ -20,6 +21,8 @@ import level2_summer_yellow from "../../public/images/maps/level2/summer/lvl2_su
 
 
 import {Link} from "react-scroll";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const handleDynamicChanges = () => {
     // Code for dynamically adding or modifying elements
 
@@ -38,18 +41,22 @@ export default class MapCarousel extends Component {
     }
 
     nextSlide = () => {
+        let slidesIndex = [0, 4, 10]
+        const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
         let newSlide =
-            this.state.currentSlide === 2
+            this.state.currentSlide === slidesIndex[2]
                 ? 0
-                : this.state.currentSlide + 1;
+                : this.state.currentSlide = slidesIndex[currentIndexInArray + 1];
         this.setState({currentSlide: newSlide});
     };
 
     prevSlide = () => {
+        let slidesIndex = [0, 4, 10]
+        const currentIndexInArray = slidesIndex.indexOf(this.state.currentSlide);
         let newSlide =
             this.state.currentSlide === 0
-                ? 2
-                : this.state.currentSlide - 1;
+                ? 10
+                : this.state.currentSlide = slidesIndex[currentIndexInArray - 1];
         this.setState({currentSlide: newSlide});
     };
 
@@ -88,6 +95,12 @@ export default class MapCarousel extends Component {
                     {(this.state.currentSlide === 0) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[0]}/>
+                            <div className='absolute top-[18%] left-[35%] w-4/12 hover:scale-[1.10]'>
+                                <Link onClick={() => {this.setCurrentSlide(3)
+                          }} smooth={true} style={{cursor: 'pointer'}}>
+                                    <Image src={level1_overseas_block}/>
+                                </Link>
+                            </div>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 1) ? (
@@ -172,7 +185,7 @@ export default class MapCarousel extends Component {
                             <Image src={slideImages[16]}/>
                         </div>
                     ):null}
-                    <div className='flex flex-col justify-evenly'>
+                    <div className='hidden md:flex flex-col justify-evenly'>
                         {[
                     ['Level 1', [0, 1, 2, 3]],
                     ['Level 2 - Spring', [4, 5, 6, 7, 8, 9]],
@@ -187,8 +200,29 @@ export default class MapCarousel extends Component {
                   ))}
 
                     </div>
+                    <nav className="md:hidden flex flex-row justify-evenly mt-6 font-gotham text-black text-[4vw]"
+                         data-aos='fade-right' data-aos-delay='300' data-aos-duration='500'>
+                         <ArrowBackIosIcon className='text-white self-center' onClick={() => {
+                                this.prevSlide();
+                              }} smooth={true} style={{cursor: 'pointer', fontSize: 40}}/>
+                         {[
+                         ['Level 1', [0, 1, 2, 3]],
+                         ['Level 2 - Spring', [4, 5, 6, 7, 8, 9]],
+                         ['Level 2 - Summer', [10, 11, 12, 13, 14, 15, 16]]
+                         ].map(([title, index]) => (
+                          // eslint-disable-next-line react/jsx-key
+                         <Link className={`border-8 border-[#757575] rounded-full w-6/12 text-center bg-[#E63B3B] hover:text-white drop-shadow-md py-3 
+                         ${index.includes(this.state.currentSlide) ? '' : 'hidden'}`}
+                              onClick={() => {
+                                this.setCurrentSlide(index[0]);
+                              }} smooth={true} style={{cursor: 'pointer'}}>{title}</Link>
+                         ))}
+                         <ArrowForwardIosIcon className='text-white self-center' onClick={() => {
+                                this.nextSlide();
+                              }} smooth={true} style={{cursor: 'pointer', fontSize: 40}}/>
+                    </nav>
                 </div>
-                <h1 className='font-ron text-center mx-auto text-white text-[2.5vw] w-2/3'>Click on the coloured blocks to get a more detailed view!</h1>
+                <h1 className='font-ron text-center mx-auto text-white md:text-[2.5vw] text-[3.5vw] md:w-2/3 7/12'>Click on the coloured blocks to get a more detailed view!</h1>
             </div>
 
             </>
