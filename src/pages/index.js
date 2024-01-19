@@ -53,7 +53,7 @@ export default function Countdown() {
             <link rel="icon" href="../../public/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
-      <div className='bg-[#1D1C20] bg-cover md:h-auto h-full h-auto text-center'>
+      <div className='bg-[#1D1C20] bg-cover md:h-auto h-full h-auto text-center overflow-hidden'>
           <section id='sutd logo'>
                 <div className='absolute z-10 left-8 top-8 md:w-[10vw] w-[24vw]'>
                     <a href='https://www.sutd.edu.sg/' target='_blank' rel="noopener noreferrer"><Image alt='sutdlogo' src={sutd_logo}/></a>
@@ -131,7 +131,7 @@ export default function Countdown() {
               <div className='absolute w-[97vw] left-2'>
                   <Image layout='responsive' src={top_remote_dots}/>
               </div>
-              <div className='flex flex-row lg:gap-[3vw] gap-[3.5vw] pt-[1vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='500'>
+              <div className='flex flex-row lg:gap-[3vw] gap-[3.5vw] pt-[1vw]' data-aos='fade-up' data-aos-duration='800' data-aos-delay='500'>
                   <div className='flex flex-col pl-[6vw] w-fit'>
                       <div className='w-[14vw] inline-block'>
                           <Image layout='responsive' src={top_left}/>
@@ -140,7 +140,7 @@ export default function Countdown() {
                           <Image layout='responsive' src={bottom_left}/>
                       </div>
                   </div>
-                  <div className='flex flex-col w-fit' data-aos='flip-up' data-aos-duration='800' data-aos-delay='700'>
+                  <div className='flex flex-col w-fit' data-aos='fade-up' data-aos-duration='800' data-aos-delay='700'>
                       <div className='relative font-ron text-[#74F8FF] mx-auto lg:leading-5 md:leading-4 sm:text-[0.8vw]
                       md:text-[0.9vw] lg:text-[1vw] w-[34vw]'>
                           <Image layout='responsive' src={top_left2}/>
@@ -153,7 +153,7 @@ export default function Countdown() {
                           <Image layout='responsive' src={bottom_left2}/>
                       </div>
                   </div>
-                  <div className='flex flex-col w-fit' data-aos='flip-up' data-aos-duration='800' data-aos-delay='900'>
+                  <div className='flex flex-col w-fit' data-aos='fade-up' data-aos-duration='800' data-aos-delay='900'>
                       {/*Add hover effect*/}
                       <div className='relative'>
                           <div className='rounded-full w-[12vw] h-[12vw] bg-black opacity-10 mx-auto'></div>
@@ -172,7 +172,7 @@ export default function Countdown() {
                       </div>
                   </div>
                   <div className='flex flex-col w-fit'>
-                      <div className='lg:w-[16vw] md:w-[18vw] w-[20vw] my-auto' data-aos='flip-up' data-aos-duration='800' data-aos-delay='1300'>
+                      <div className='lg:w-[16vw] md:w-[18vw] w-[20vw] my-auto' data-aos='fade-up' data-aos-duration='800' data-aos-delay='1300'>
                         <Image layout='responsive' src={right}/>
                       </div>
                   </div>
