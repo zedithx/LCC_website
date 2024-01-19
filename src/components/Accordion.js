@@ -88,9 +88,9 @@ export default function Accordion(props){
             </div>
             {accordionOpen && (
             <>
-                <div className='flex items-center relative py-14'>
-                    <h1 className='font-gotham text-center text-white text-[3.5vw] w-full'>Press the rocket to go back up!</h1>
-                    <div className='absolute right-4 w-[10vw]'>
+                <div className='flex items-center relative md:py-14 py-8'>
+                    <h1 className='font-gotham text-center mx-auto md:mx-0 text-white md:text-[3.5vw] text-[5vw] md:w-full w-3/5'>Press the rocket to go back up!</h1>
+                    <div className='absolute right-4 md:w-[10vw] w-[15vw]'>
                         <Link to='top' smooth={true} style={{cursor: 'pointer'}}>
                             <Image alt='rocket' src={rocket}/>
                         </Link>

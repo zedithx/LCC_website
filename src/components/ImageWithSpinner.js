@@ -28,9 +28,9 @@ const ImageWithSpinner = ({ src, alt }) => {
 
 const Spinner = () => {
   return (
-  <div className="loader">
-      <span className="loader-text">loading</span>
-      <span className="load"></span>
+  <div className={styles.loader}>
+      <span className={styles.loader_text}>Loading</span>
+      <span className={styles.load}></span>
   </div>
   )// Implement your spinner component
 };

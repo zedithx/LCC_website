@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,6 +12,7 @@ import Accordion from "@/components/Accordion";
 import {fifth_rows, urop, overseas_opp, spring_internship, summer_internship} from "@/static/booth"
 import general_level1 from "../../public/images/maps/level1/level1_general.png"
 import MapCarousel from "@/components/MapCarousel";
+import styles from '../pages/lcc.module.css'
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 
