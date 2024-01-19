@@ -1,6 +1,5 @@
 import {Component} from "react";
 import Image from "next/image";
-import AOS from "aos";
 import general_level1 from "../../public/images/maps/level1/level1_general.png"
 import level1_fifthrow from "../../public/images/maps/level1/level1_fifthrow.png"
 import level1_urop from "../../public/images/maps/level1/level1_urop.png"
@@ -84,92 +83,92 @@ export default class MapCarousel extends Component {
         return (
             <>
             <div className='bg-[#596461] rounded-2xl w-11/12 relative pb-8 z-20 mx-auto'>
-                <div className='flex flex-row py-8 mx-8 gap-8'>
+                <div className='flex md:flex-row flex-col py-8 mx-8 gap-8'>
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[0]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 1) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[1]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 2) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[2]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 3) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[3]}/>
                         </div>
                     ):null}
                     {/*Level 1 Spring*/}
                     {(this.state.currentSlide === 4) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[4]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 5) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[5]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 6) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[6]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 7) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[7]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 8) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[8]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 9) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[9]}/>
                         </div>
                     ):null}
                     {/*Level 2 Summer*/}
                     {(this.state.currentSlide === 10) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[10]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 11) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[11]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 12) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[12]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 13) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[13]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 14) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[14]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 15) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[15]}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 16) ? (
-                        <div className='border-4 border-gray-600 w-9/12 relative' data-aos={'zoom-out-up'}>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
                             <Image src={slideImages[16]}/>
                         </div>
                     ):null}
