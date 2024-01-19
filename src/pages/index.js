@@ -103,7 +103,7 @@ export default function Countdown() {
                    <div className='relative font-ron text-[#74F8FF] mx-auto md:leading-4 w-[80vw]' data-aos='flip-up' data-aos-duration='800' data-aos-delay='300'>
                        <Image layout='responsive' src={top_left2}/>
                        <h1 className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-[2.5vw] w-[70vw]'>
-                            Free food, get a chance to win airpods pro, learn about many enriching programmes/activities your seniors experienced!
+                            Food carts, MEGA lucky draw prizes??? Say no more!!
                             <br></br><br></br>(to proceed press THE button)
                         </h1>
                   </div>
@@ -145,7 +145,7 @@ export default function Countdown() {
                       md:text-[0.9vw] lg:text-[1vw] w-[34vw]'>
                           <Image layout='responsive' src={top_left2}/>
                           <h1 className='absolute -translate-x-1/2 left-1/2 top-1/2 -translate-y-1/2 lg:text-[1vw] text-[0.8vw] w-[28vw]'>
-                              “Food carts, MEGA lucky draw prizes??? Say no more!!”
+                              Food carts, MEGA lucky draw prizes??? Say no more!!
                               <br></br><br></br>(to proceed press THE button)
                           </h1>
                       </div>

@@ -1,4 +1,4 @@
-import {Component} from "react";
+import {Component, useState} from "react";
 import Image from "next/image";
 import general_level1 from "../../public/images/maps/level1/level1_general.png"
 import level1_overseas_block from "../../public/images/maps/level1/blocks/level1_overseas_block.png"
@@ -44,7 +44,6 @@ const handleDynamicChanges = () => {
   };
 
 export default class MapCarousel extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -103,7 +102,7 @@ export default class MapCarousel extends Component {
         return (
             <>
             <div className='bg-[#596461] rounded-2xl w-11/12 relative pb-8 z-20 mx-auto'>
-                <div className='flex md:flex-row flex-col py-8 mx-8 gap-8'>
+                <div className='flex md:flex-row flex-col py-8 mx-8 md:gap-8 gap-4'>
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
@@ -130,7 +129,8 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 1) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'}>
-                            <Image src={slideImages[1]}/>
+                            <Image src={slideImages[1]} onLoad={() => setIsLoading(false)} // Set loading to false once the image is loaded
+                            style={{ display: isLoading ? 'none' : 'block' }}/>
                         </div>
                     ):null}
                     {(this.state.currentSlide === 2) ? (
