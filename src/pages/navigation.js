@@ -9,7 +9,8 @@ import bloom5 from "../../public/images/background/bloom5.png"
 import cat_icon from "../../public/images/background/cat_icon.png"
 import Accordion from "@/components/Accordion";
 import {fifth_rows, urop, overseas_opp, spring_internship, summer_internship} from "@/static/booth"
-import general_level1 from "../../public/images/maps/general_level1.jpg"
+import general_level1 from "../../public/images/maps/general_level1.png"
+import MapCarousel from "@/components/MapCarousel";
 
 const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
 
@@ -53,9 +54,7 @@ export default function Navigation() {
               <section id='navigation-map'>
                   <h1 className='pl-8 pt-10 font-ron text-[5vw] text-[#B57BFF] relative z-20'>Navigation</h1>
               {/*    Insert Image of map here: carousel*/}
-                  <div className='pl-8 w-9/12 z-20 relative'>
-                      <Image src={general_level1}/>
-                  </div>
+                  <MapCarousel/>
                   <h1 className='w-10/12 mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
