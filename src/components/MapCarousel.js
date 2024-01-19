@@ -106,7 +106,8 @@ export default class MapCarousel extends Component {
                 <div className='flex md:flex-row flex-col py-8 md:mx-8 mx-1 md:gap-8 gap-4'>
                     {/*   Level 1*/}
                     {(this.state.currentSlide === 0) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
+                             data-aos-duration='800' data-aos-delay='500'>
                             <Image src={slideImages[0]}/>
                             <div className='absolute top-[18%] left-[35%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(3)
@@ -154,7 +155,8 @@ export default class MapCarousel extends Component {
                     ):null}
                     {/*Level 2 Spring*/}
                     {(this.state.currentSlide === 4) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
+                             data-aos-duration='800' data-aos-delay='500'>
                             <Image src={slideImages[4]}/>
                             <div className='absolute bottom-[5%] left-[24%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(9)
@@ -230,7 +232,8 @@ export default class MapCarousel extends Component {
                     ):null}
                     {/*Level 2 Summer*/}
                     {(this.state.currentSlide === 10) ? (
-                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'} data-aos-duration='800'>
+                        <div className='border-4 border-gray-600 md:w-9/12 w-full relative'
+                             data-aos={'flip-up'} data-aos-duration='800' data-aos-delay='500'>
                             <Image src={slideImages[10]}/>
                             <div className='absolute top-[33%] right-[18%] w-[40%] hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(11)

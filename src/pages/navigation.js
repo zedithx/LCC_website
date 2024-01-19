@@ -59,7 +59,8 @@ export default function Navigation() {
                   <h1 className='pl-8 pt-10 font-ron md:text-[5vw] text-[7vw] text-[#B57BFF] relative z-20'>Navigation</h1>
               {/*    Insert Image of map here: carousel*/}
                   <MapCarousel/>
-                  <h1 className='w-10/12 z-20 relative mx-auto font-gotham md:text-[1.5vw] text-[4vw] text-white text-center mt-14'>
+                  <h1 className='w-10/12 z-20 relative mx-auto font-gotham md:text-[1.5vw] text-[4vw]
+                  text-white text-center mt-14' data-aos='fade-up' data-aos-duration='800'>
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
               </section>

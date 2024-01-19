@@ -17,7 +17,7 @@ export default function Accordion(props){
     }
     const booths = props.booth
     return (
-        <div id='top' className='bg-[#596461] rounded-2xl w-11/12 mx-auto mb-4'>
+        <div id='top' className='bg-[#596461] rounded-2xl w-11/12 mx-auto mb-4' data-aos='fade-up' data-aos-duration='800'>
             <div className='md:space-x-20 space-x-6 items-center py-4 flex flex-row'>
                 <div className='bg-[#191970] md:ml-10 ml-4 text-[#0BFFE6] font-ron md:w-9/12 w-7/12 border-4 border-gray-600'>
                     <h1 className='md:ml-10 ml-4 py-4 md:text-[1.4vw] text-[3vw]'>
