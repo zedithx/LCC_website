@@ -109,7 +109,7 @@ export default class MapCarousel extends Component {
                     {(this.state.currentSlide === 0) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
                              data-aos-duration='800'>
-                            <Image src={slideImages[0]}/>
+                            <ImageWithSpinner src={slideImages[0]}/>
                             <div className='absolute top-[18%] left-[35%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(3)
                           }} smooth={true} style={{cursor: 'pointer'}}>
@@ -140,7 +140,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 2) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[2]} alt='slide 2'/>
+                            <ImageWithSpinner src={slideImages[2]} alt='slide 2'/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -148,7 +148,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 3) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[3]}/>
+                            <ImageWithSpinner src={slideImages[3]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(0)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -158,7 +158,7 @@ export default class MapCarousel extends Component {
                     {(this.state.currentSlide === 4) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'flip-up'}
                              data-aos-duration='800'>
-                            <Image src={slideImages[4]}/>
+                            <ImageWithSpinner src={slideImages[4]}/>
                             <div className='absolute bottom-[5%] left-[24%] w-4/12 hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(9)
                                 }} smooth={true} style={{cursor: 'pointer'}}>
@@ -193,7 +193,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 5) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[5]} alt='slide 5'/>
+                            <ImageWithSpinner src={slideImages[5]} alt='slide 5'/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -201,7 +201,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 6) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[6]}/>
+                            <ImageWithSpinner src={slideImages[6]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -209,7 +209,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 7) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[7]}/>
+                            <ImageWithSpinner src={slideImages[7]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -217,7 +217,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 8) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[8]}/>
+                            <ImageWithSpinner src={slideImages[8]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -225,7 +225,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 9) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[9]}/>
+                            <ImageWithSpinner src={slideImages[9]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(4)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -235,7 +235,7 @@ export default class MapCarousel extends Component {
                     {(this.state.currentSlide === 10) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative'
                              data-aos={'flip-up'} data-aos-duration='800'>
-                            <Image src={slideImages[10]}/>
+                            <ImageWithSpinner src={slideImages[10]}/>
                             <div className='absolute top-[33%] right-[18%] w-[40%] hover:scale-[1.10]'>
                                 <Link onClick={() => {this.setCurrentSlide(11)
                                 }} smooth={true} style={{cursor: 'pointer'}}>
@@ -276,7 +276,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 11) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[11]}/>
+                            <ImageWithSpinner src={slideImages[11]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -284,7 +284,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 12) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[12]}/>
+                            <ImageWithSpinner src={slideImages[12]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -292,7 +292,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 13) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[13]}/>
+                            <ImageWithSpinner src={slideImages[13]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -300,7 +300,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 14) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[14]}/>
+                            <ImageWithSpinner src={slideImages[14]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -308,7 +308,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 15) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'fade-up'} data-aos-duration='500'>
-                            <Image src={slideImages[15]}/>
+                            <ImageWithSpinner src={slideImages[15]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.10]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>
@@ -316,7 +316,7 @@ export default class MapCarousel extends Component {
                     ):null}
                     {(this.state.currentSlide === 16) ? (
                         <div className='border-4 border-gray-600 md:w-9/12 w-full relative' data-aos={'zoom-out-up'} data-aos-duration='500'>
-                            <Image src={slideImages[16]}/>
+                            <ImageWithSpinner src={slideImages[16]}/>
                             <ExitToAppIcon className='absolute rotate-180 text-white top-[1%] right-[1%] hover:scale-[1.1]'
                                            smooth={true} onClick={() => {this.setCurrentSlide(10)}}
                                            style={{cursor: 'pointer', fontSize: 50}}/>

@@ -5,6 +5,7 @@ import styles from "../pages/lcc.module.css";
 import { styled } from '@mui/material/styles';
 import React, {useEffect, useState} from "react";
 import food from "../../public/images/posters/pubs/food.jpg"
+import ImageWithSpinner from "@/components/ImageWithSpinner";
 
 
 const ModalBox = styled(Box)`
@@ -81,7 +82,7 @@ export default function FoodModal(props) {
               {isMobile ? (
           <div className={`opacity-0 ${show ? styles.fadeModalMobile : ""}`}>
               <ModalBoxMobile>
-                  <Image src={food} layout='responsive'/>
+                  <ImageWithSpinner src={food} layout='responsive'/>
               </ModalBoxMobile>
           </div>
           ) : (
