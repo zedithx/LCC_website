@@ -96,7 +96,7 @@ export default function LuckyDrawModal(props) {
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
                       <h1 className='text-white'>
-                          Winners will be announced approx at 5.30pm. We have a countdown shown at the top of the website as well!
+                          Winners will be announced approx at 5.30pm @ Campus Centre. We have a countdown shown at the top of the website as well!
                       </h1>
                     </div>
                 </div>
@@ -126,7 +126,7 @@ export default function LuckyDrawModal(props) {
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
                       <h1 className='text-white'>
-                          Winners will be announced approx at 5.30pm. We have a countdown shown at the top of the website as well!
+                          Winners will be announced approx at 5.30pm @ Campus Centre. We have a countdown shown at the top of the website as well!
                       </h1>
                    </div>
                 </div>
