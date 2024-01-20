@@ -65,7 +65,7 @@ export default function Navigation() {
                       Numbers on the map indicates booth number correlated to the number on each card below
                   </h1>
               </section>
-              <section id='directory' className='pt-10 pb-12 z-20 relative'>
+              <section id='directory' className='pt-10 pb-20 z-20 relative'>
               {/*    Accordion UROP*/}
                   <Accordion title="Undergraduate Research Opportunities Programme (U1-U4)" booth={urop}/>
               {/*    Accordion overseas Op*/}
