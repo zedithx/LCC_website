@@ -23,7 +23,7 @@ import LuckyDrawModal from "@/components/LuckyDrawModal";
 import FoodModal from "@/components/FoodModal";
 import styles from "./lcc.module.css"
 
-const LUCKYDRAW_TIMING = new Date("2024-01-24 18:00")
+const LUCKYDRAW_TIMING = new Date("2024-01-24 17:30")
 export default function Home() {
     useEffect(() => {
             AOS.init();

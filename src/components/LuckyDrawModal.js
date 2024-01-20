@@ -91,12 +91,14 @@ export default function LuckyDrawModal(props) {
                       <h1 className='text-white'>
                           1. Scan the QR codes placed around Campus Centre!
                           <br></br>
-                          2. Input in the Booth Number to indicate best booth! Voila, you&apos;re now in the contest!!
+                          2. Choose the poster on the telegram bot to tell us which is the best poster!
+                          Voila, you&apos;re now in the contest!!
                       </h1>
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
                       <h1 className='text-white'>
-                          Winners will be announced approx at 5.30pm @ Campus Centre. We have a countdown shown at the top of the website as well!
+                          Winners will be announced at approximately 5.30pm @ Campus Centre.
+                          We have a countdown shown at the top of the website as well!
                       </h1>
                     </div>
                 </div>
@@ -121,12 +123,14 @@ export default function LuckyDrawModal(props) {
                       <h1 className='text-white'>
                           1. Scan the QR codes placed around Campus Centre!
                           <br></br>
-                          2. Input in the Booth Number to indicate best booth! Voila, you&apos;re now in the contest!!
+                          2. Choose the poster on the telegram bot to tell us which is the best poster!
+                          Voila, you&apos;re now in the contest!!
                       </h1>
                       <br></br>
                       <h1 className='font-bold'>When will it be announced?</h1>
                       <h1 className='text-white'>
-                          Winners will be announced approx at 5.30pm @ Campus Centre. We have a countdown shown at the top of the website as well!
+                          Winners will be announced at approximately 5.30pm @ Campus Centre.
+                          We have a countdown shown at the top of the website as well!
                       </h1>
                    </div>
                 </div>

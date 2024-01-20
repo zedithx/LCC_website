@@ -14,7 +14,7 @@ import general_level1 from "../../public/images/maps/level1/level1_general.png"
 import MapCarousel from "@/components/MapCarousel";
 import styles from '../pages/lcc.module.css'
 
-const LUCKYDRAW_TIMING = new Date("2024-01-27 18:00")
+const LUCKYDRAW_TIMING = new Date("2024-01-27 17:30")
 
 export default function Navigation() {
     useEffect(() => {
