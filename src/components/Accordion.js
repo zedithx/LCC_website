@@ -4,13 +4,6 @@ import rocket from '../../public/images/rocket/rocket_arrow.png'
 import { Link } from "react-scroll"
 import ImageWithSpinner from "@/components/ImageWithSpinner";
 
-const transitionStyles = {
-  entering: { opacity: 0, maxHeight: 0 },
-  entered: { opacity: 1, maxHeight: '40000px' }, // Adjust the maxHeight value as needed
-  exiting: { opacity: 0, maxHeight: 0 },
-  exited: { opacity: 0, maxHeight: 0 },
-};
-
 export default function Accordion(props){
     const [accordionOpen, setAccordionOpen] = useState(false);
     const handleAccordion = () => {
@@ -29,8 +22,8 @@ export default function Accordion(props){
                         className='md:border-8 border-8 border-[#2C2C2C] md:w-[4vw] md:h-[4vw] w-[16vw] h-[16vw] bg-[#B20202] hover:bg-[#5FFF6F]'>
                 </button>
              </div>
-            <div className={`flex flex-wrap gap-4 justify-around transition-all duration-500 ease-in-out 
-            ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`} style={transitionStyles[accordionOpen ? 'entered' : 'exited']}>
+            <div className={`flex flex-wrap gap-4 justify-around accordion-content 
+            ${accordionOpen ? 'opacity-100 pb-4' : 'opacity-0'}`}>
             {accordionOpen &&
             booths.map((booth) => {
                 const getInternshipClass = () => {
@@ -91,7 +84,7 @@ export default function Accordion(props){
                 <div className='flex items-center relative md:py-14 py-8'>
                     <h1 className='font-gotham text-center mx-auto md:mx-0 text-white md:text-[3.5vw] text-[5vw] md:w-full w-3/5'>Press the rocket to go back up!</h1>
                     <div className='absolute right-4 md:w-[10vw] w-[15vw]'>
-                        <Link to='top' smooth={true} style={{cursor: 'pointer'}}>
+                        <Link onClick={handleAccordion} style={{cursor: 'pointer'}}>
                             <Image alt='rocket' src={rocket}/>
                         </Link>
                         {/*<RocketIcon className='mr-10 mb-10 text-white' style={{cursor: 'pointer', fontSize: 100}}/>*/}

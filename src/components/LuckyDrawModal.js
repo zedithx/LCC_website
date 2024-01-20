@@ -80,7 +80,7 @@ export default function LuckyDrawModal(props) {
                        Log: #30196
                     </h1>
                     <h1 className='text-[2vw] absolute top-1 right-3'>
-                       Date 27092023
+                       Date 24012024
                     </h1>
                     <h1 className='text-[6vw] text-center font-ron pt-6'>
                       Lucky Draw

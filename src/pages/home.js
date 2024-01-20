@@ -132,7 +132,7 @@ export default function Home() {
                                Log: #30194
                           </h1>
                           <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 md:right-3 right-2'>
-                               Date 27092023
+                               Date 24012024
                           </h1>
                           <h1 className='md:text-[2vw] text-[5vw] font-ron pt-6'>
                               Projects
@@ -169,7 +169,7 @@ export default function Home() {
                                Log: #30195
                            </h1>
                           <h1 className='md:text-[.5vw] text-[1.5vw] absolute top-1 right-3'>
-                               Date 27092023
+                               Date 24012024
                            </h1>
                           <h1 className='md:text-[2vw] text-[5vw] font-ron pt-6'>
                           Entertainment
