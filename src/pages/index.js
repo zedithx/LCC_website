@@ -50,7 +50,7 @@ export default function Countdown() {
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
             <title>LCC2024</title>
-            <link rel="icon" href="../../public/favicon.ico" />
+            <link rel="icon" href="/favicon.ico" />
             <link rel="canonical" href="http://lcc.sutd.edu.sg"/>
         </Head>
       <div className='bg-[#1D1C20] bg-cover md:h-auto h-full h-auto text-center overflow-hidden'>
